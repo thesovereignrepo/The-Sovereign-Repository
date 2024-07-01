@@ -36,9 +36,9 @@ Official Documentation - [Tor Link](http://qubesosfasa4zl44o4tws22di6kepyzfeqv3t
 
 Introduction  - [Tor Link](http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/intro/) | [Clearnet Link](https://www.qubes-os.org/intro/)
 
-Get Started Video - [Tor Link](http://iv.daturab6drmkhyeia4ch5gvfc2f3wgo6bhjrv3pz6n7kxmvoznlkq4yd.onion/watch?v=Aghj8MyDF4I) | [Clearnet Alt YT Front-end Link](https://iv.datura.network/watch?v=Aghj8MyDF4I) | [Clearnet YT Link](https://www.youtube.com/watch?v=Aghj8MyDF4I)
+Get Started Video - [Tor Link](http://iv.daturab6drmkhyeia4ch5gvfc2f3wgo6bhjrv3pz6n7kxmvoznlkq4yd.onion/watch?v=Aghj8MyDF4I) | [Clearnet Alt YT Front-end Link](https://yewtu.be/watch?v=L1KZWjZVnAw) | [Clearnet YT Link](https://www.youtube.com/watch?v=Aghj8MyDF4I)
 
-Video Tutorial Playlist [Tor Link](http://iv.daturab6drmkhyeia4ch5gvfc2f3wgo6bhjrv3pz6n7kxmvoznlkq4yd.onion/playlist?list=PLjwSYc73nX6aHcpqub-6lzJbL0vhLleTB) | [Clearnet Alt YT Front-end Link](https://iv.datura.network/playlist?list=PLjwSYc73nX6aHcpqub-6lzJbL0vhLleTB) | [Clearnet YT Link](https://www.youtube.com/playlist?list=PLjwSYc73nX6aHcpqub-6lzJbL0vhLleTB)
+Video Tutorial Playlist [Tor Link](http://iv.daturab6drmkhyeia4ch5gvfc2f3wgo6bhjrv3pz6n7kxmvoznlkq4yd.onion/playlist?list=PLjwSYc73nX6aHcpqub-6lzJbL0vhLleTB) | [Clearnet Alt YT Front-end Link](https://yewtu.be/playlist?list=PLjwSYc73nX6aHcpqub-6lzJbL0vhLleTB) | [Clearnet YT Link](https://www.youtube.com/playlist?list=PLjwSYc73nX6aHcpqub-6lzJbL0vhLleTB)
 
 <br/>
 
