@@ -55,15 +55,15 @@ Wireguard
 
 Are you currently using Stock Android OS or an iPhone and looking to regain your privacy? Here you'll find everything you need to get started on your journey.
 
-I put this page together in an attempt to make the task of buying, configuring, and using a private/secure alternate phone OS as easy as possible. If you're like some more info on the "why" check out this clip 📺.
+I put this page together in an attempt to make the task of buying, configuring, and using a private/secure alternate phone OS as easy as possible. If you're like some more info on the "why" check out this clip.
 
 ## Choosing an OS
 
 GrapheneOS is the only option I can recommend at this point for a phone Operating System. It's an Open Source project that puts privacy and security first. The OS only runs on Google Pixel devices, so that's the phone you'll need to use. Now that we know what OS we'll be installing:
 
-Here's my most recent review video of GrapheneOS - https://youtu.be/hbs7EPSaauI 
+Here's my most recent review video of GrapheneOS - https://youtu.be/hbs7EPSaauI
 
-I also took GrapheneOS on a road trip to test it out - https://youtu.be/rp--qY9eSYI 
+I also took GrapheneOS on a road trip to test it out - https://youtu.be/rp--qY9eSYI
 
 ## Buying a phone
 
@@ -84,7 +84,7 @@ Now that you have a device, it's time to install GrapheneOS. If your device isn'
 
 If you don't see your device listed in one of the videos, choose the newest video. The installation process is nearly identical across devices when using the web installer.
 
-Once you have GrapheneOS installed, let's start with an overview of the stock apps installed 📺, you only need to watch the first 1min12s of that video.
+Once you have GrapheneOS installed, let's start with an overview of the stock apps installed, you only need to watch the first 1min12s of that video.
 
 ## Cell service
 
@@ -92,7 +92,7 @@ If you have a physical SIM card, you can remove it from your old device and put 
 
 ## App Stores
 
-Before deciding which app stores to use, check out this video  for an overview of what's available and some basics.
+Before deciding which app stores to use, check out this video for an overview of what's available and some basics.
 
 ### Aurora Store
 
@@ -106,9 +106,9 @@ A popular repository for Open Source Software (OSS) is F-Droid. F-Droid has some
 
 To simplify it, here are the 3 options:
 
-    F-Droid - Video Link 📺 - OK
+    F-Droid - Video Link - OK
     Droid-ify/Neo Store - A little better than OK
-    Using Obtanium to manually track apps - Video Link 📺 - Best
+    Using Obtanium to manually track apps - Video Link - Best
 
 ### Obtainium
 
@@ -124,18 +124,18 @@ In this video I show how to install Sandboxed Google Play services and some diff
 
 ## Profiles
 
-Work Profiles vs User Profiles. In the Sandboxed Googlge Play Services video, I mentioned User Profiles. If you're interested in learning some more about those, check out this video 📺.
+Work Profiles vs User Profiles. In the Sandboxed Googlge Play Services video, I mentioned User Profiles. If you're interested in learning some more about those, check out this video.
 
 ## Secure messaging
 
-Text messages (SMS) are not secure or private. There are some great options out there which I cover in this video 📺.
+Text messages (SMS) are not secure or private. There are some great options out there which I cover in this video.
 
 ## Contact/Calendar storage
 
 Most of us use our phones for communicate with people and to store our calendars. If you're looking for a method that I would recommend, I detail those in the following videos.
 
     Free Secure Cloud Contact Storage - ADD URLS
-    Free Secure Cloud Calendar Storage 
+    Free Secure Cloud Calendar Storage
 
 ## Backup/Restore
 
@@ -147,9 +147,9 @@ Phones get lost/stolen everyday. Protect your data by taking a backup in case th
 ## Useful videos
 
     Apps I use on my personal phone - ADD VIDEO URLS
-    GrapheneOS new features - Profile notifications and Storage Scopes 
-    How your phones' wallpaper can be used to track you 
+    GrapheneOS new features - Profile notifications and Storage Scopes
+    How your phones' wallpaper can be used to track you
     Sensors and Network permission toggle 
     GrapheneOS Review - Android 13 
-    Progressive Web Apps 
+    Progressive Web Apps
     GrapheneOS new features - Sensors, Network, Exploit Protection
