@@ -145,7 +145,7 @@ USB Qube - [Tor Link](http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqr
 **Tip:** When updating your sys-usb qube to use a new template VM, the following command will help you not lose USB peripheral access by properly restarting it. For example, running this command in dom0 terminal to switch fedora-39 as the template VM:
 
     ```
-qvm-shutdown --wait sys-usb; qvm-prefs sys-usb template fedora-39; qvm-start sys-usb
+    qvm-shutdown --wait sys-usb; qvm-prefs sys-usb template fedora-39; qvm-start sys-usb
     ```
 
 <br/>
