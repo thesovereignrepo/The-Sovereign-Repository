@@ -6,7 +6,7 @@
 
 2. Sign up for Github and enable 2fa. There is not a Tor .onion for Github at this time.
 
-3. Store all relevant credendtials in password manager.
+3. Store all relevant credentials in password manager.
 
 4. Ideally you will never need to use the email address again, but make sure all data is stored in case you need it!
 
