@@ -20,7 +20,7 @@ The combination of your wallet and your node provides privacy that can't be obta
 ## Some interesting sites to view live network nodes
 
 ### [Bitnodes](https://bitnodes.io)
-Bitnodes is a site listing reachable bitcoin nodes. If you're running a node with a static IP, it'll show up here. These nodes are public. You would *not* normally setup your own node to have it's own IP address, so your node won't appear in the list. You normally configure your node to participate privately on the bitcoin network over tor. This list however can give you insights into the size and detail of the publically visible nodes in the network.
+Bitnodes is a site listing publicly reachable bitcoin nodes with their own static IP address. You would *not* normally setup your own node to have it's own IP address, so your node won't appear in the list. You normally configure your node to participate privately on the bitcoin network over tor. The list however can give you insights into the size and detail of the publically visible nodes in the network.
 
 ### [Bitcoin Testnet Explorer](https://live.blockcypher.com/btc-testnet/)
 An explorer for testnet.
