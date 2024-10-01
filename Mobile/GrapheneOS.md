@@ -1,44 +1,103 @@
-# Coming soon
+# Graphene OS
 
-Useful links:
+## Table of Contents
+* [1. Intro](#intro)
+* [2. Installing](#installing)
+* [3. VPN](#vpn)
+* [4. Apps](#apps)
+* [5. Profiles](#profiles)
+* [6. Sandboxed Google Play](#sandboxed-google-play)
+* [7. Web Apps](#web-apps)
+* [8. Wallet](#wallet)
+* [9. Backup](#backup)
+* [10. Videos](#videos)
 
-    https://grapheneos.org - GrapheneOS
-    https://grapheneos.org/features - GrapheneOS Features
-    https://grapheneos.org/usage - GrapheneOS Usage
-    https://grapheneos.org/faq - GrapheneOS FAQ
+<br/>
 
-Auditor App
+## Intro
 
-    https://attestation.app/ - Auditor App
-    https://attestation.app/tutorial#scheduled-remote-verification - Remote attestation setup
+- GrapheneOS is a privacy and security focused Android Operating System for Google Pixel smartphones.
 
-GrapheneOS Camera
+- Think of it as an escape from Google, Apple, and much of tech that is tracking you in addition to hoarding your data.
 
-    https://grapheneos.org/usage#grapheneos-camera-app GrapheneOS Camera documentation
-    https://github.com/GrapheneOS/Camera - GrapheneOS Camera GitHub
+- Follow the table of contents to set up a decently private, modern-feeling, and secure phone.
 
-GrapheneOS PDF Viewer
+- Use this guide any time you need to redeploy or need a reminder.
 
-    https://grapheneos.org/features#grapheneos-pdf-viewer - GrapheneOS PDF Viewer documentation
-    https://github.com/GrapheneOS/PdfViewer - GrapheneOS PDF Viewer GitHub
+<details>
 
-GrapheneOS Vanadium
+<summary>**>> Click to expand**</summary>
 
-    https://grapheneos.org/features#vanadium - GrapheneOS Vanadium documentation
-    https://github.com/GrapheneOS/Vanadium - GrapheneOS Vanadium GitHub
+### What is this?
 
-Settings
+Are you currently using default Android OS or an iPhone and looking to regain your privacy? Here you'll find everything you need to get started on your journey.
 
-    https://grapheneos.org/features#auto-reboot - Auto reboot
-    https://grapheneos.org/features#attack-surface-reduction - Wi-Fi/Bluetooth timeout
-    https://grapheneos.org/features#pin-scrambling - Pin Scrambling
+This page is in an attempt to make the task of buying, configuring, and using a private/secure alternate phone OS as easy as possible. It is not too difficult if you are willing to put a little bit of time and effort in.
+
+Graphene OS is the only option we can recommend at this point for a phone Operating System. It's an Open Source project that puts privacy and security first. The OS only runs on Google Pixel devices, so that's the phone you'll need to use.
+
+### Buying a phone
+
+If you don't already own a Google Pixel you'll need to purchase one. Before buying your device confirm that it is fully unlocked or you will not be able to install Graphene OS.
+
+Some ideas for purchase are Amazon, eBay, or just walk into a Best Buy with cash and purchase one.
+
+### Cell service
+
+You do not need to purchase a SIM card or eSIM from a company like AT&T or Tmobile unless you are trying to make this an every day carry.
+
+Many people get comfortable enough with Graphene OS to use it every day, and in that case you will probably need data services.
+
+When considering your threat model, see this information - [Clearnet Link](https://grapheneos.org/faq#cellular-tracking)
 
 
-Todo:
-explain how you can use webapps for uber, shopping, etc.
-android-setup-tips
+[Tor Link]() | [Clearnet Link]()
+[Tor Link]() | [Clearnet Link]()
 
-Apps:
+###  Graphene OS Resources
+
+Features - [Clearnet Link](https://grapheneos.org/features) 
+Usage - [Clearnet Link](https://grapheneos.org/usage)
+FAQ - [Clearnet Link](https://grapheneos.org/faq)
+Camera - [Clearnet Link](https://grapheneos.org/usage#grapheneos-camera-app)
+PDF Viewer - [Clearnet Link](https://grapheneos.org/features#grapheneos-pdf-viewer)
+Vanadium - [Clearnet Link](https://grapheneos.org/features#vanadium)
+Auto reboot - [Clearnet Link](https://grapheneos.org/features#auto-reboot)
+Wi-Fi/Bluetooth timeout - [Clearnet Link](https://grapheneos.org/features#attack-surface-reduction)
+Pin Scrambling - [Clearnet Link](https://grapheneos.org/features#pin-scrambling)
+
+</details>
+
+<br/>
+
+## Installing
+
+1. Make sure the default Android OS on the pixel is has the latest system updates.
+
+2. Enable the developer options menu by going to Settings > About and repeatedly pressing the Build Number menu entry until developer mode is enabled.
+
+3. Next, go to Settings > System > Developer options and toggle on the OEM unlocking setting and USB debugging setting. Note for the Pixel 6a, OEM unlocking won't work with the version of the stock OS from the factory. You need to update it and factory reset the device to fix OEM unlocking.
+
+4. Now you can plug the phone into your PC and proceed with the web installer. [Clearnet Link](https://grapheneos.org/install/web)
+
+5. For visual learners, follow along with this video. [Clearnet Link](https://www.youtube.com/watch?v=CD4Jl6ZYEbw)
+
+## VPN
+
+TODO: Mullvad, IVPN, Proton
+
+## Apps
+
+TODO: Contact or storage scopes
+
+TODO: Secure messaging - Text messages (SMS) are not secure or private. 
+
+### Obtainium
+
+Get Android app updates directly from the source. Obtainium allows you to install and update apps directly from their releases pages, and receive notifications when new releases are made available. This is a by far the best option available to download and update apps if you are willing to learn some new tricks.
+
+TODO: Add obtainium apps list for others to use
+
 Protonmail .apk: https://protonapps.com/protonmail-android
 Nekogram
 Shelter
@@ -50,49 +109,10 @@ OpenKeychain
 KeePassDX
 Tor Browser
 Wireguard
+Auditor App
 
-## What is this?
-
-Are you currently using Stock Android OS or an iPhone and looking to regain your privacy? Here you'll find everything you need to get started on your journey.
-
-I put this page together in an attempt to make the task of buying, configuring, and using a private/secure alternate phone OS as easy as possible. If you're like some more info on the "why" check out this clip.
-
-## Choosing an OS
-
-GrapheneOS is the only option I can recommend at this point for a phone Operating System. It's an Open Source project that puts privacy and security first. The OS only runs on Google Pixel devices, so that's the phone you'll need to use. Now that we know what OS we'll be installing:
-
-Here's my most recent review video of GrapheneOS - https://youtu.be/hbs7EPSaauI
-
-I also took GrapheneOS on a road trip to test it out - https://youtu.be/rp--qY9eSYI
-
-## Buying a phone
-
-If you don't already own a Google Pixel that's supported by GrapheneOS, you'll need to purchase one. Before buying your device, you need to confirm that OEM Unlocking is supported. I cover that in this clip.
-
-
-Amazon - recommended if buying new
-Swappa - recommended if buying used
-Gazelle
-eBay
-Walk into a Best Buy with cash and purchase one.
-
-## Installing GrapheneOS
-
-Now that you have a device, it's time to install GrapheneOS. If your device isn't listed, just choose the most recent video.
-
-    Install GrapheneOS on Pixel 7 - ADD VIDEO HERE
-
-If you don't see your device listed in one of the videos, choose the newest video. The installation process is nearly identical across devices when using the web installer.
-
-Once you have GrapheneOS installed, let's start with an overview of the stock apps installed, you only need to watch the first 1min12s of that video.
-
-## Cell service
-
-If you have a physical SIM card, you can remove it from your old device and put it in your new one. If you have an eSIM, there's a few more steps involved in the eSIM setup.
-
-## App Stores
-
-Before deciding which app stores to use, check out this video for an overview of what's available and some basics.
+https://attestation.app/ - Auditor App
+https://attestation.app/tutorial#scheduled-remote-verification - Remote attestation setup
 
 ### Aurora Store
 
@@ -102,54 +122,51 @@ Once you have it installed you can watch this video on how to set it up.
 
 ### F-Droid
 
-A popular repository for Open Source Software (OSS) is F-Droid. F-Droid has some security concerns that I detail in this video.
-
-To simplify it, here are the 3 options:
-
-    F-Droid - Video Link - OK
-    Droid-ify/Neo Store - A little better than OK
-    Using Obtanium to manually track apps - Video Link - Best
-
-### Obtainium
-
-Get Android app updates directly from the source. Obtainium allows you to install and update apps directly from their releases pages, and receive notifications when new releases are made available. This is a by far the best option available to download and update apps if you are willing to learn some new tricks.
-
-Todo: Add obtainium apps list for others to use
-
-## Sandboxed GPS
-
-Google Play Services (GPS) are not installed by default. You might notice that notifications don't work for some Apps in GrapheneOS or maybe some apps fail to run (such as banking apps). The reason for this is that some apps depend on Google Play Service, but GrapheneOS doesn't have those. Luckily the developers provide a way to install Google Play Service Sandboxed, so you can have all the functionality available on a device with stock Android OS. GrapheneOS.org has a great write up on the details of the implementation that I would suggest reading.
-
-In this video I show how to install Sandboxed Google Play services and some different configuration options available.
+TODO: A popular repository for Open Source Software (FOSS) is F-Droid. 
 
 ## Profiles
 
-Work Profiles vs User Profiles. In the Sandboxed Googlge Play Services video, I mentioned User Profiles. If you're interested in learning some more about those, check out this video.
+TODO: Work Profiles vs User Profiles. 
 
-## Secure messaging
+Protip Put any Aurora Store apps on work profile.
 
-Text messages (SMS) are not secure or private. There are some great options out there which I cover in this video.
+## Sandboxed Google Play
 
-## Contact/Calendar storage
+Google Play Services (GPS) are not installed by default. You might notice that notifications don't work for some Apps in GrapheneOS or maybe some apps fail to run (such as banking apps). The reason for this is that some apps depend on Google Play Service, but GrapheneOS doesn't have those. Luckily the developers provide a way to install Google Play Service Sandboxed, so you can have all the functionality available on a device with stock Android OS. GrapheneOS.org has a great write up on the details of the implementation that I would suggest reading.
+
+## Web Apps
+
+TODO: explain how you can use webapps for reservations, travel, uber, shopping, etc.
+
+## Wallet
+
+TODO: Want to learn more about your options for wallet? Link wallet section
+
+## Backups
+
+TODO:
+Contact/Calendar storage
 
 Most of us use our phones for communicate with people and to store our calendars. If you're looking for a method that I would recommend, I detail those in the following videos.
 
     Free Secure Cloud Contact Storage - ADD URLS
     Free Secure Cloud Calendar Storage
 
-## Backup/Restore
-
 Phones get lost/stolen everyday. Protect your data by taking a backup in case this happens to you.
 
     How to backup GrapheneOS - ADD URLS
     How to restore GrapheneOS from a backup
 
-## Useful videos
+Seedvault
 
-    Apps I use on my personal phone - ADD VIDEO URLS
-    GrapheneOS new features - Profile notifications and Storage Scopes
-    How your phones' wallpaper can be used to track you
-    Sensors and Network permission toggle 
-    GrapheneOS Review - Android 13 
-    Progressive Web Apps
-    GrapheneOS new features - Sensors, Network, Exploit Protection
+"...the project has been taken over by another group of people not sharing our goals or approach. For now, this is the best available option, so we're including it to give people encrypted backup support. We've made several security fixes to work around upstream issues with the project."
+
+Most of us use our phones for communicate with people and to store our calendars. If you're looking for a method that I would recommend, I detail those in the following videos.
+
+    Free Secure Cloud Contact Storage - ADD URLS
+    Free Secure Cloud Calendar Storage
+
+## Videos
+
+Here's a review video of GrapheneOS - https://youtu.be/hbs7EPSaauI
+GrapheneOS on a road trip test - https://youtu.be/rp--qY9eSYI
