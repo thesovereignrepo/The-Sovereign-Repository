@@ -9,22 +9,24 @@ Two ways of achieving this combination are:
 * Dojo technology
 * BTCPay Server technology
 
-The best and easiest way is to purchase and install RoninDojo technology at your home or office.
+The best and easiest way is to purchase and install RoninDojo built technology at your home or office.
 
 ### [RoninDojo](https://web.archive.org/web/20240426061333mp_/https://wiki.ronindojo.io/en/home)
-RoninDojo is turnkey bitcoin node technology including hardware, software and support. 
+RoninDojo provides turnkey bitcoin technology including hardware, software and support. See [What is RoninDojo?](https://blog.ronindojo.io/what-is-ronindojo)
 
-**Tanto** by RoninDojo is a plug-and-play bitcoin node in a rugged premium aluminum case. The Tanto contains a ROCKPro64 single board computer with ARM microprocessor, 
-memory, 1TB or 2TB SSD, Ethernet port and power supply. Preinstalled with software and optionally - recent snapshot of the blockchain database to minimize the time required to complete the Initial Blockchain Download (IBD) process, to get up and running. Support is provided on [RoninDojo website](https://web.archive.org/web/20240421123402mp_/https://wiki.ronindojo.io/en/support) and on Telegram - [Dojo by Samourai Wallet](t.me/RoninDojoNode/1)
+RoninCLI and the RoninUI graphical user interface make setting up and using your node smooth and enjoyable.
+
+**Tanto** hardware offerings by RoninDojo are plug-and-play bitcoin nodes. The Tanto Gen2 contains a [ROCKPro64](https://pine64.org/devices/rockpro64) single board computer with ARM microprocessor, 
+memory, 1TB or 2TB SSD, Ethernet port and power supply. Preinstalled with software and optionally - recent snapshot of the blockchain database to minimize the time required to complete the Initial Blockchain Download (IBD) process, to get up and running faster. Support is provided on [RoninDojo website](https://web.archive.org/web/20240421123402mp_/https://wiki.ronindojo.io/en/support) and on Telegram - [Dojo by Samourai Wallet](t.me/RoninDojoNode/1)
 
 [How to setup Tanto - Bitcoin Magazine](https://bitcoinmagazine.com/guides/set-up-ronindojo-for-private-bitcoin#gid=ci029c5f461008272a&pid=tanto04_1)
 
 [Why I Chose RoninDojo?](https://blog.ronindojo.io/why-choose-ronindojo/)
 
-`NOTE: New Tanto nodes are temporarily unavailable for purchase at the RoninDojo store.`
+`NOTE: Tanto nodes are temporarily unavailable for purchase at the RoninDojo store.` See [RoninDojo Status Update](https://blog.ronindojo.io/ronindojo-update-2024)
 
 ### [MyDojo](https://github.com/Dojo-Open-Source-Project/samourai-dojo/blob/develop/doc/DOCKER_ubuntu_setup.md) 
-MyDojo by Samourai Wallet is open source software that lets you build a do-it-yourself node on your own computer hardware or virtual machine using the same open source code base used on RoninDojo Tanto. This path is much more challenging and requires your own hardware, technical expertise and extra time and patience. If you have background in Linux, you can get a node up and running MyDojo. (MyDojo is sometimes referred to as vanilla dojo to distinguish it from RoninDojo Tanto.) Setting up a node with MyDojo lacks the smooth user experience and addition premium user interface components provided RoninDojo Tanto. Detailed instructions are provided [here](https://github.com/Dojo-Open-Source-Project/samourai-dojo/blob/develop/doc%2FDOCKER_ubuntu_setup.md). Support is provided on Telegram - [Dojo by Samourai Wallet](https://t.me/samourai_dojo) 
+MyDojo by Samourai Wallet is open source software that lets you build a do-it-yourself node on your own computer hardware or virtual machine using the same open source code base used on RoninDojo Tanto. This path is much more challenging and requires your own hardware, technical expertise and extra time and patience. If you have background in Linux, you can get a node up and running MyDojo. (MyDojo is sometimes referred to as vanilla dojo to distinguish it from RoninDojo Tanto.) Setting up a node with MyDojo lacks the smooth user experience and additional premium user interface components (RoninCLI and RoninUI) provided with RoninDojo Tanto. Detailed instructions are provided [here](https://github.com/Dojo-Open-Source-Project/samourai-dojo/blob/develop/doc%2FDOCKER_ubuntu_setup.md). Support is provided on Telegram - [Dojo by Samourai Wallet](https://t.me/samourai_dojo) 
 
 ### Attaching wallets to your Dojo node
 Self-custody wallets are attached/paired or *imported* to your node by taking steps in the wallet. Your node's onion address ([tor](https://www.torproject.org/)) is used to provide a secure, anonymous connection from your wallet to your node over the Internet.
@@ -35,7 +37,7 @@ Self-custody wallets are attached/paired or *imported* to your node by taking st
 
 
 ### [BTCPay Server](https://btcpayserver.org/)
-BTCPay Server is a free, open-source & self-hosted bitcoin payment gateway that contains a full bitcoin node. You can install the software on your own server hardware, a virtual machine, Virtual Private Server (VPS) or cloud server. See [deployment methods](https://docs.btcpayserver.org/Deployment/) to decide which method best fits you. Difficulty of installing and maintaining, intended use, features and cost are key factors to consider. [Hardware deployment](https://docs.btcpayserver.org/Deployment/Hardware/) provides absolute control over your infrastructure. Running a BTCPayServer can be a great experience, but requires deep technical skills with Linux, Docker and networking. 
+BTCPay Server is a free, open-source & self-hosted bitcoin payment gateway that contains a full bitcoin node. You can install the software on your own server hardware, virtual machine, Virtual Private Server (VPS) or cloud server. See [deployment methods](https://docs.btcpayserver.org/Deployment/) to decide which method best fits you. Difficulty of installing and maintaining, intended use, features and cost are key factors to consider. [Hardware deployment](https://docs.btcpayserver.org/Deployment/Hardware/) provides absolute control over your infrastructure. Running a BTCPayServer can be a great experience, but requires technical skills with Linux, Docker and networking. 
 
 ### Attaching wallets to your BTCPay Server
 
@@ -44,26 +46,27 @@ BTCPay Server is a free, open-source & self-hosted bitcoin payment gateway that 
 ## Bitcoin Node Operations
 
 ### Public vs Private Operation
-You have the option to operate your node publicly or privately. Setting up to use a [tor hidden service](https://en.bitcoin.it/wiki/Setting_up_a_Tor_hidden_service) only will allow your node to make only outbound connections to other bitcoin network nodes. This is the default for dojo nodes. BTCPayServer nodes, on the other hand, require a static IP and a publically registered domain name. Running a node behind a static IP address is not recommended for home use. This will disclose identity information regarding your personal residence to the bitcoin network since your home IP is typically owned by your ISP and fully KYC info is readily obtainable. It's certainly possible to set up a VPN with a static IP to run a public node. Technology such as Linode, pfSense/opnSense and OpenVPN can be used for this purpose. However, for first time node runners, it's recommended to stick with a private tor-only setup.
+You have the option to operate your node publicly or privately. Setting up to use a [tor hidden service](https://en.bitcoin.it/wiki/Setting_up_a_Tor_hidden_service) only will allow your node to make only outbound connections to other bitcoin network nodes. This is the default for dojo nodes. BTCPayServer nodes, on the other hand, require a static IP and a publicly registered domain name. Running a node behind a static IP address is not recommended for home use. This will disclose identity information regarding your personal residence to the bitcoin network since your home IP is typically owned by your ISP and fully KYC info is readily obtainable. It's certainly possible to set up a VPN with a static IP to run a public node. Technology such as Linode, pfSense/opnSense and OpenVPN can be used for this purpose. However, for first time node runners, it's recommended to stick with a private tor-only setup.
+
+### Firewall
+If you run your node using tor-only, you won't need to provide any special firewall rules. Your node will initiate outbound connections to other nodes in the bitcoin network. However, if you want to make your node accessible publicly from the Internet, you'll need to open inbound port 8333 for bitcoin (mainnet). This normally is done by setting up a port forwarding rule in your router/firewall. When your router receives a TCP connection from the Internet on port 8333, it should forward it to your node's local IP address.
 
 ### Initial Block Download (IBD)
-Initial block download refers to the process where nodes synchronize themselves to the network by downloading blocks that are new to them. This will happen when a node is far behind the tip of the best block chain. In the process of IBD, a node does not accept incoming transactions nor request mempool transactions.
-
-If you are trying to set up a new node following the instructions below, you will go through the IBD process at the first run, and it may take a considerable amount of time since a new node has to download the entire block chain (which is roughly 340 gigabytes now). During the download, there could be a high usage for the network and CPU (since the node has to verify the blocks downloaded), and the client will take up an increasing amount of storage space (reduce storage provides more details on reducing storage). 
+_Initial block download (IBD)_ refers to the process of downloading the entire bitcoin blockchain. The node stores the blocks to disk and verifies them. During the process, a node does not accept incoming transactions nor request mempool transactions. After the IBD completes, the node is ready to be used.
 
 ### Selecting an Address Indexer
 In order to quickly and efficiently lookup bitcoin addresses in transactions already on the blockchain, your node run an indexer. There are several types of address indexers.  
 
-[Indexer](https://web.archive.org/web/20240214172902mp_/https://wiki.ronindojo.io/en/setup/indexer)
+[RoninDojo Indexer setup](https://web.archive.org/web/20240214172902mp_/https://wiki.ronindojo.io/en/setup/indexer)
 
-Electrum Rust Server (electrs)
+This [article](https://sparrowwallet.com/docs/server-performance.html) provides an analysis of the pros and cons of the available indexers.
 
-Fulcrum 
+`TLDR; For this reason, Fulcrum emerges as a clear winner in this benchmark`
 
-TODO: pros and cons
+A downside of using the Fulcrum indexer is that it's sensitive to node power loss. If your node abruptly loses power, the Fulcrum index can be corrupted and require your to delete and rebuild the index database which can take several days to complete.
 
-### Network and Power
-Running your own node requires 365/24/7 uptime to remain efficient and reliabile. The bitcoin blockchain is constantly being updated as transactions occur and blocks are added. Your node is constantly communicating with other nodes in the bitcoin network verifying and storing the data on its internal hard drive or SSD. Block indexers run on your node to provide fast access to the transactions. These processes can be costly to re-sync if they're interrupted by power or network outages. Use a good Uninterruptible Power Supply (UPS) to power your node and networking equipment (router, switches, etc) to keep your system up should you lose power from your electric service provider. Also, consider subscribing to a backup Internet service to use if your primary Internet service becomes unavailable.
+### Network and Power Backup
+Running your own node requires 365/24/7 uptime to remain efficient and reliabile. The bitcoin blockchain is constantly being updated as transactions occur and blocks are added. Your node is constantly communicating with other nodes in the bitcoin network verifying and storing the data on its internal hard drive or SSD. The address indexer running on your node to provide fast access to the transactions. These processes take time to re-sync to the bitcoin network data if they're interrupted by power or network outages. Use an Uninterruptible Power Supply (UPS) to provide backup power to your node and networking equipment (router, switches, etc). Also, consider subscribing to a backup Internet service to use in case your primary Internet service becomes unavailable.
 
 
 ### Summary
@@ -72,7 +75,7 @@ The combination of a self-custody wallet and running your own node provides a le
 ## Some interesting sites to view public live network nodes
 
 ### [Bitnodes](https://bitnodes.io)
-Bitnodes is a site listing reachable bitcoin nodes. Nodes configured with a static IP address appear in the list. Privately nodes communicating with tor only don't appear. This list however can give you insights into the size and detail of the publically visible nodes in the network.
+Bitnodes is a site listing reachable bitcoin nodes. Nodes configured with a static IP address appear in the list. Privately nodes communicating with tor only don't appear. This list however can give you insights into the size and detail of the publilly visible nodes in the network.
 
 ### [Bitcoin Testnet Explorer](https://live.blockcypher.com/btc-testnet/)
 An explorer for testnet.
