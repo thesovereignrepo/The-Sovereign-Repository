@@ -50,7 +50,6 @@ Many people get comfortable enough with Graphene OS to use it every day, and in 
 
 When considering your threat model, see this information - [Clearnet Link](https://grapheneos.org/faq#cellular-tracking)
 
-
 [Tor Link]() | [Clearnet Link]()
 [Tor Link]() | [Clearnet Link]()
 
@@ -88,41 +87,62 @@ TODO: Mullvad, IVPN, Proton
 
 ## Apps
 
+When it comes to downloading apps you have a few different App Store options. 
+
+This guide suggests only using free and open source apps downloaded via Obtainium for your main profile, and a new profile can be created for the nasty closed source apps like Facebook or Instagram.
+
 TODO: Contact or storage scopes
 
 TODO: Secure messaging - Text messages (SMS) are not secure or private. 
 
 ### Obtainium
 
-Get Android app updates directly from the source. Obtainium allows you to install and update apps directly from their releases pages, and receive notifications when new releases are made available. This is a by far the best option available to download and update apps if you are willing to learn some new tricks.
+Download Obtainium app .apk from Github - [Clearnet Link](https://github.com/ImranR98/Obtainium)
 
-TODO: Add obtainium apps list for others to use
+Obtainium allows you to install and update apps directly from their source release pages, and receive notifications when new releases are made available. This is a by far the best option available to download and update Open Source apps.
 
-Protonmail .apk: https://protonapps.com/protonmail-android
-Nekogram
-Shelter
-Open Camera
-New Pipe
-Dicio
-Hashdroid
-OpenKeychain
-KeePassDX
-Tor Browser
-Wireguard
-Auditor App
+Main Profile:
+AnySoftKeyboard - [Clearnet Link](https://github.com/AnySoftKeyboard/AnySoftKeyboard)
+AppVerifier -     [Clearnet Link](https://github.com/soupslurpr/AppVerifier)
+BreezyWeather -   [Clearnet Link](https://github.com/breezy-weather/breezy-weather)
+Deadhash -        [Clearnet Link](https://github.com/CodeDead/DeadHash-android)
+Dicio -           [Clearnet Link](https://github.com/Stypox/dicio-android)
+InviZiblePro -    [Clearnet Link](https://github.com/Gedsh/InviZible)
+KeePassDX -       [Clearnet Link](https://github.com/Kunzisoft/KeePassDX)
+Markor -          [Clearnet Link](https://github.com/gsantner/markor)
+Nekogram -        [Clearnet Link](https://github.com/Nekogram/Nekogram)
+NewPipe -         [Clearnet Link](https://github.com/TeamNewPipe/NewPipe)
+OpenKeychain -    [Clearnet Link](https://github.com/open-keychain/open-keychain)
+OrganicMaps -     [Clearnet Link](https://github.com/organicmaps/organicmaps)
+Protonmail        [Clearnet Link](https://github.com/ProtonMail/android-mail)
+Shelter -         [Clearnet Link](https://gitea.angry.im/PeterCxy/Shelter)
+Signal -          [Clearnet Link](https://signal.org)
+SimpleX -         [Clearnet Link](https://github.com/simplex-chat/simplex-chat)
+Spotube -         [Clearnet Link](https://github.com/KRTirtho/spotube)
+SimpleCalendar -  [Clearnet Link](https://github.com/SimpleMobileTools/Simple-Calendar)
+Wireguard -       [Clearnet Link](https://download.wireguard.com/android-client)
 
-https://attestation.app/ - Auditor App
-https://attestation.app/tutorial#scheduled-remote-verification - Remote attestation setup
+TODO: Obtainium export
+TODO: PGP signed app lists?
 
 ### Aurora Store
 
-GrapheneOS doesn't come bundled with any app stores pre-installed, so we need to install them ourselves. The first app store I would suggest you install is called Aurora Store. Aurora Store allows you to download apps from Google Play store without having to install Google Play Store. Go to https://auroraoss.com in your mobile browser and download "Aurora Store x.x.x (Stable).
+Make sure to create a Work Profile that is seperate from your Main Profile by using the Shelter app listed above.
 
-Once you have it installed you can watch this video on how to set it up.
+Download Aurora Store app .apk from Gitlab - [Clearnet Link](https://gitlab.com/AuroraOSS/AuroraStore)
+
+Aurora Store allows you to download apps from Google Play store without having to install Google Play Store. Go to https://auroraoss.com in your mobile browser and download "Aurora Store x.x.x (Stable).
+
+Work Profile:
+Aurora Store
+Brave Browser
+Instagram
+Uber
+X
 
 ### F-Droid
 
-TODO: A popular repository for Open Source Software (FOSS) is F-Droid. 
+TODO: Tor Browser -     [Clearnet Link]() 
 
 ## Profiles
 
@@ -141,6 +161,7 @@ TODO: explain how you can use webapps for reservations, travel, uber, shopping, 
 ## Wallet
 
 TODO: Want to learn more about your options for wallet? Link wallet section
+TODO: Stack
 
 ## Backups
 
