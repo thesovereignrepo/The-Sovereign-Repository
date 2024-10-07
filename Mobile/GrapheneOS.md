@@ -26,13 +26,13 @@
 
 <details>
 
-<summary>**>> Click to expand**</summary>
+<summary>**>> First time? Click to expand**</summary>
 
 ### What is this?
 
 Are you currently using default Android OS or an iPhone and looking to regain your privacy? Here you'll find everything you need to get started on your journey.
 
-This page is in an attempt to make the task of buying, configuring, and using a private/secure alternate phone OS as easy as possible. It is not too difficult if you are willing to put a little bit of time and effort in.
+This page is in an attempt to make the task of buying, configuring, and using a private/secure alternate phone OS as easy as possible. Once familiar, you can use this guide you can deploy a phone in about 30 minutes.
 
 Graphene OS is the only option we can recommend at this point for a phone Operating System. It's an Open Source project that puts privacy and security first. The OS only runs on Google Pixel devices, so that's the phone you'll need to use.
 
@@ -50,20 +50,17 @@ Many people get comfortable enough with Graphene OS to use it every day, and in 
 
 When considering your threat model, see this information - [Clearnet Link](https://grapheneos.org/faq#cellular-tracking)
 
-[Tor Link]() | [Clearnet Link]()
-[Tor Link]() | [Clearnet Link]()
-
 ###  Graphene OS Resources
 
-Features - [Clearnet Link](https://grapheneos.org/features) 
-Usage - [Clearnet Link](https://grapheneos.org/usage)
-FAQ - [Clearnet Link](https://grapheneos.org/faq)
-Camera - [Clearnet Link](https://grapheneos.org/usage#grapheneos-camera-app)
-PDF Viewer - [Clearnet Link](https://grapheneos.org/features#grapheneos-pdf-viewer)
-Vanadium - [Clearnet Link](https://grapheneos.org/features#vanadium)
-Auto reboot - [Clearnet Link](https://grapheneos.org/features#auto-reboot)
+Features -                [Clearnet Link](https://grapheneos.org/features) 
+Usage -                   [Clearnet Link](https://grapheneos.org/usage)
+FAQ -                     [Clearnet Link](https://grapheneos.org/faq)
+Camera -                  [Clearnet Link](https://grapheneos.org/usage#grapheneos-camera-app)
+PDF Viewer -              [Clearnet Link](https://grapheneos.org/features#grapheneos-pdf-viewer)
+Vanadium -                [Clearnet Link](https://grapheneos.org/features#vanadium)
+Auto reboot -             [Clearnet Link](https://grapheneos.org/features#auto-reboot)
 Wi-Fi/Bluetooth timeout - [Clearnet Link](https://grapheneos.org/features#attack-surface-reduction)
-Pin Scrambling - [Clearnet Link](https://grapheneos.org/features#pin-scrambling)
+Pin Scrambling -          [Clearnet Link](https://grapheneos.org/features#pin-scrambling)
 
 </details>
 
@@ -73,9 +70,9 @@ Pin Scrambling - [Clearnet Link](https://grapheneos.org/features#pin-scrambling)
 
 1. Make sure the default Android OS on the pixel is has the latest system updates.
 
-2. Enable the developer options menu by going to Settings > About and repeatedly pressing the Build Number menu entry until developer mode is enabled.
+2. Enable the developer options menu by going to Settings > About and repeatedly tapping the "Build Number" menu entry until developer mode is enabled.
 
-3. Next, go to Settings > System > Developer options and toggle on the OEM unlocking setting and USB debugging setting. Note for the Pixel 6a, OEM unlocking won't work with the version of the stock OS from the factory. You need to update it and factory reset the device to fix OEM unlocking.
+3. Next, go to Settings > System > Developer options and toggle on the "OEM unlocking" setting and "USB debugging" setting. Note for the Pixel 6a, OEM unlocking won't work with the version of the stock OS from the factory. You need to update it and factory reset the device to fix it.
 
 4. Now you can plug the phone into your PC and proceed with the web installer. [Clearnet Link](https://grapheneos.org/install/web)
 
@@ -83,30 +80,42 @@ Pin Scrambling - [Clearnet Link](https://grapheneos.org/features#pin-scrambling)
 
 ## VPN
 
-TODO: Mullvad, IVPN, Proton
+Please consider using Tor browser to register for a VPN service before proceeding. Here are some suggestions.
+
+1. Mullvad VPN - [Tor Link](https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion) | [Clearnet Link](https://mullvad.net)
+
+2. IVPN - [Clearnet Link](https://www.ivpn.net/en/wireguard)
+
+3. Proton VPN - [Tor Link](https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/) | [Clearnet Link](https://protonvpn.com)
+
+TODO: Wireguard
 
 ## Apps
 
-When it comes to downloading apps you have a few different App Store options. 
+When it comes to downloading apps there are some options to consider. 
 
-This guide suggests only using free and open source apps downloaded via Obtainium for your main profile, and a new profile can be created for the nasty closed source apps like Facebook or Instagram.
+This guide suggests using Open Source apps downloaded via Obtainium for your Main Profile, and a Work Profile can be created for all the nasty tracking apps like Facebook or Instagram.
 
-TODO: Contact or storage scopes
-
-TODO: Secure messaging - Text messages (SMS) are not secure or private. 
+TODO: Contact/Storage scopes
 
 ### Obtainium
 
-Download Obtainium app .apk from Github - [Clearnet Link](https://github.com/ImranR98/Obtainium)
-
 Obtainium allows you to install and update apps directly from their source release pages, and receive notifications when new releases are made available. This is a by far the best option available to download and update Open Source apps.
 
-Main Profile:
-AnySoftKeyboard - [Clearnet Link](https://github.com/AnySoftKeyboard/AnySoftKeyboard)
+1. Download Obtainium app .apk from Github - [Clearnet Link](https://github.com/ImranR98/Obtainium)
+
+2. (Optional) Import the [obtainium-quick-deploy.json](https://github.com/thesovereignrepo/The-Sovereign-Repository/blob/master/Mobile) file into the Obtainium app to quickly download everything listed in the Main Profile Example below.
+
+3. (Optional) Manually copy/paste Github links into Obtainium to download any apps you want.
+
+Main Profile Example Apps:
 AppVerifier -     [Clearnet Link](https://github.com/soupslurpr/AppVerifier)
 BreezyWeather -   [Clearnet Link](https://github.com/breezy-weather/breezy-weather)
 Deadhash -        [Clearnet Link](https://github.com/CodeDead/DeadHash-android)
+Calendar -        [Clearnet Link](https://github.com/FossifyOrg/Calendar)
 Dicio -           [Clearnet Link](https://github.com/Stypox/dicio-android)
+Heliboard -       [Clearnet Link](https://github.com/Helium314/HeliBoard)
+Insular -         [Clearnet Link](https://f-droid.org/en/packages/com.oasisfeng.island.fdroid/)
 InviZiblePro -    [Clearnet Link](https://github.com/Gedsh/InviZible)
 KeePassDX -       [Clearnet Link](https://github.com/Kunzisoft/KeePassDX)
 Markor -          [Clearnet Link](https://github.com/gsantner/markor)
@@ -115,40 +124,35 @@ NewPipe -         [Clearnet Link](https://github.com/TeamNewPipe/NewPipe)
 OpenKeychain -    [Clearnet Link](https://github.com/open-keychain/open-keychain)
 OrganicMaps -     [Clearnet Link](https://github.com/organicmaps/organicmaps)
 Protonmail        [Clearnet Link](https://github.com/ProtonMail/android-mail)
-Shelter -         [Clearnet Link](https://gitea.angry.im/PeterCxy/Shelter)
 Signal -          [Clearnet Link](https://signal.org)
 SimpleX -         [Clearnet Link](https://github.com/simplex-chat/simplex-chat)
 Spotube -         [Clearnet Link](https://github.com/KRTirtho/spotube)
-SimpleCalendar -  [Clearnet Link](https://github.com/SimpleMobileTools/Simple-Calendar)
+TorBrowser -      [Clearnet Link](https://www.torproject.org/download/#android/)
 Wireguard -       [Clearnet Link](https://download.wireguard.com/android-client)
 
-TODO: Obtainium export
-TODO: PGP signed app lists?
+TODO: Verify apps not in AppVerifier database
+TODO: Quick add to Obtanium buttons, crowdsourced app list
 
 ### Aurora Store
 
-Make sure to create a Work Profile that is seperate from your Main Profile by using the Shelter app listed above.
+Aurora Store allows you to download apps from Google Play Store without having to install Google Play Store. Make sure to create a [Work Profile](#profiles) for these apps!
 
-Download Aurora Store app .apk from Gitlab - [Clearnet Link](https://gitlab.com/AuroraOSS/AuroraStore)
+1. Download Aurora Store app .apk from Gitlab - [Clearnet Link](https://gitlab.com/AuroraOSS/AuroraStore)
 
-Aurora Store allows you to download apps from Google Play store without having to install Google Play Store. Go to https://auroraoss.com in your mobile browser and download "Aurora Store x.x.x (Stable).
+2. Download the apps you need from Aurora Store, but always keep in mind they are coming from Google Play Store.
 
-Work Profile:
+3. (Optional) Continue to the [Sandboxed Google Play](#sandboxed-google-play) section below if needed.
+
+Work Profile Example Apps:
 Aurora Store
 Brave Browser
 Instagram
 Uber
-X
-
-### F-Droid
-
-TODO: Tor Browser -     [Clearnet Link]() 
+X 
 
 ## Profiles
 
-TODO: Work Profiles vs User Profiles. 
-
-Protip Put any Aurora Store apps on work profile.
+TODO: Insular App, Work Profiles vs Main Profile
 
 ## Sandboxed Google Play
 
@@ -156,38 +160,27 @@ Google Play Services (GPS) are not installed by default. You might notice that n
 
 ## Web Apps
 
-TODO: explain how you can use webapps for reservations, travel, uber, shopping, etc.
+Don't want to use Aurora Store to download apps from Google Play Store? Don't want to enable Sandboxed Google Play Services? Try using Web Apps like https://uber.com instead of downloading an app.
 
-## Wallet
-
-TODO: Want to learn more about your options for wallet? Link wallet section
-TODO: Stack
+If this you are using this as a main device try to keep this in mind for reservations, travel, shopping, etc.
 
 ## Backups
 
-TODO:
-Contact/Calendar storage
+TODO: Contact, Calendar, Data storage
 
-Most of us use our phones for communicate with people and to store our calendars. If you're looking for a method that I would recommend, I detail those in the following videos.
-
+Most of us use our phones for communicate with people and to store our calendars.
     Free Secure Cloud Contact Storage - ADD URLS
     Free Secure Cloud Calendar Storage
 
 Phones get lost/stolen everyday. Protect your data by taking a backup in case this happens to you.
-
     How to backup GrapheneOS - ADD URLS
     How to restore GrapheneOS from a backup
 
 Seedvault
-
 "...the project has been taken over by another group of people not sharing our goals or approach. For now, this is the best available option, so we're including it to give people encrypted backup support. We've made several security fixes to work around upstream issues with the project."
-
-Most of us use our phones for communicate with people and to store our calendars. If you're looking for a method that I would recommend, I detail those in the following videos.
-
-    Free Secure Cloud Contact Storage - ADD URLS
-    Free Secure Cloud Calendar Storage
 
 ## Videos
 
 Here's a review video of GrapheneOS - https://youtu.be/hbs7EPSaauI
 GrapheneOS on a road trip test - https://youtu.be/rp--qY9eSYI
+App stores - https://www.youtube.com/watch?v=IAoCfrqxIEg
