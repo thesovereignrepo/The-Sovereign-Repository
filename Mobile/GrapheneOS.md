@@ -24,9 +24,13 @@
 
 - Use this guide any time you need to redeploy or need a reminder.
 
+<br/>
+
 <details>
 
 <summary>**>> First time? Click to expand**</summary>
+
+<br/>
 
 ### What is this?
 
@@ -36,30 +40,46 @@ This page is in an attempt to make the task of buying, configuring, and using a 
 
 Graphene OS is the only option we can recommend at this point for a phone Operating System. It's an Open Source project that puts privacy and security first. The OS only runs on Google Pixel devices, so that's the phone you'll need to use.
 
+<br/>
+
 ### Buying a phone
+
+The current recommendation is to use a Google Pixel 8 or any model after, and do not use any model prior to the Google Pixel 6 as they do not have the Titan M2 secure element chip.
 
 If you don't already own a Google Pixel you'll need to purchase one. Before buying your device confirm that it is fully unlocked or you will not be able to install Graphene OS.
 
 Some ideas for purchase are Amazon, eBay, or just walk into a Best Buy with cash and purchase one.
 
+<br/>
+
 ### Cell service
 
-You do not need to purchase a SIM card or eSIM from a company like AT&T or Tmobile unless you are trying to make this an every day carry.
+Many people get comfortable enough with Graphene OS to use it every day, and in that case you will probably need phone service. There are many different threat models, and many do not mind the tradeoffs of having access to cellular data services.
 
-Many people get comfortable enough with Graphene OS to use it every day, and in that case you will probably need data services.
+If considering a threat model, see this information - [Clearnet Link](https://grapheneos.org/faq#cellular-tracking)
 
-When considering your threat model, see this information - [Clearnet Link](https://grapheneos.org/faq#cellular-tracking)
+It is not required to purchase a SIM card or eSIM from a company like AT&T or Tmobile unless you are trying to make this an every day carry. You can use this device as Wifi only or even keep it totally offline depending on your needs.
+
+<br/>
 
 ###  Graphene OS Resources
 
-Features -                [Clearnet Link](https://grapheneos.org/features) 
+Features -                [Clearnet Link](https://grapheneos.org/features)
+
 Usage -                   [Clearnet Link](https://grapheneos.org/usage)
+
 FAQ -                     [Clearnet Link](https://grapheneos.org/faq)
+
 Camera -                  [Clearnet Link](https://grapheneos.org/usage#grapheneos-camera-app)
+
 PDF Viewer -              [Clearnet Link](https://grapheneos.org/features#grapheneos-pdf-viewer)
+
 Vanadium -                [Clearnet Link](https://grapheneos.org/features#vanadium)
+
 Auto reboot -             [Clearnet Link](https://grapheneos.org/features#auto-reboot)
+
 Wi-Fi/Bluetooth timeout - [Clearnet Link](https://grapheneos.org/features#attack-surface-reduction)
+
 Pin Scrambling -          [Clearnet Link](https://grapheneos.org/features#pin-scrambling)
 
 </details>
@@ -68,19 +88,19 @@ Pin Scrambling -          [Clearnet Link](https://grapheneos.org/features#pin-sc
 
 ## Installing
 
-1. Make sure the default Android OS on the pixel is has the latest system updates.
+1. Make sure the default Android OS on the Pixel has the latest system updates.
 
-2. Enable the developer options menu by going to Settings > About and repeatedly tapping the "Build Number" menu entry until developer mode is enabled.
+2. Go to Settings > About and repeatedly tap the "Build Number" menu entry until developer mode is enabled.
 
-3. Next, go to Settings > System > Developer options and toggle on the "OEM unlocking" setting and "USB debugging" setting. Note for the Pixel 6a, OEM unlocking won't work with the version of the stock OS from the factory. You need to update it and factory reset the device to fix it.
+3. Next, go to Settings > System > Developer and toggle ON the "OEM unlocking" setting and "USB debugging" setting. Note for Pixel 6a users, the "OEM unlocking" will not be available with the default OS from the factory. You need to update and factory reset the device to fix it.
 
-4. Now you can plug the phone into your PC and proceed with the web installer. [Clearnet Link](https://grapheneos.org/install/web)
+4. Now you can plug the phone into your desktop computer (or another Pixel phone) and proceed with the Graphene OS web installer. [Clearnet Link](https://grapheneos.org/install/web)
 
-5. For visual learners, follow along with this video. [Clearnet Link](https://www.youtube.com/watch?v=CD4Jl6ZYEbw)
+<br/>
 
 ## VPN
 
-Please consider using Tor browser to register for a VPN service before proceeding. Here are some suggestions.
+After you install Graphene OS, please consider using Tor browser to register for a VPN service, download the VPN app, and turn on VPN before proceeding any further. Here are some VPN suggestions.
 
 1. Mullvad VPN - [Tor Link](https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion) | [Clearnet Link](https://mullvad.net)
 
@@ -88,15 +108,27 @@ Please consider using Tor browser to register for a VPN service before proceedin
 
 3. Proton VPN - [Tor Link](https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/) | [Clearnet Link](https://protonvpn.com)
 
-TODO: Wireguard
+4. (Optional) Later on, consider trying the Wireguard app along with Wireguard VPN config files provided by your VPN service. Keep in mind the Wireguard app is available in the [Obtanium quick deploy file](#obtainium) below.
+
+<br/>
 
 ## Apps
 
-When it comes to downloading apps there are some options to consider. 
+Downloading apps without the Google Play Store is easier than you think. Let's explore some options!
 
-This guide suggests using Open Source apps downloaded via Obtainium for your Main Profile, and a Work Profile can be created for all the nasty tracking apps like Facebook or Instagram.
+<br/>
 
-TODO: Contact/Storage scopes
+### Contact & Storage Scopes
+
+When installing apps it is helpful to know the "scopes" feature and how you can limit access that apps have to your data.
+
+1. Be advised, when installing apps that access Contacts or stored media such as photos, Graphene will show a pop-up to notify you of the "scopes" feature for your newly installed app. 
+
+2. If you choose to enable "scopes", the app will not have acccess to your Contacts or Storage data. For example, you probably don't want to enable "scopes" when installing an app you need to edit photos taken with your camera, as you would not have access to where the photos are stored.
+
+3. Make a mistake installing an app? Uninstall, reinstall, and try again!
+
+<br/>
 
 ### Obtainium
 
@@ -109,29 +141,48 @@ Obtainium allows you to install and update apps directly from their source relea
 3. (Optional) Manually copy/paste Github links into Obtainium to download any apps you want.
 
 Main Profile Example Apps:
+
 AppVerifier -     [Clearnet Link](https://github.com/soupslurpr/AppVerifier)
+
 BreezyWeather -   [Clearnet Link](https://github.com/breezy-weather/breezy-weather)
+
 Deadhash -        [Clearnet Link](https://github.com/CodeDead/DeadHash-android)
+
 Calendar -        [Clearnet Link](https://github.com/FossifyOrg/Calendar)
+
 Dicio -           [Clearnet Link](https://github.com/Stypox/dicio-android)
+
 Heliboard -       [Clearnet Link](https://github.com/Helium314/HeliBoard)
-Insular -         [Clearnet Link](https://f-droid.org/en/packages/com.oasisfeng.island.fdroid/)
+
+Insular -         [Clearnet Link](https://f-droid.org/en/packages/com.oasisfeng.island.fdroid)
+
 InviZiblePro -    [Clearnet Link](https://github.com/Gedsh/InviZible)
+
 KeePassDX -       [Clearnet Link](https://github.com/Kunzisoft/KeePassDX)
+
 Markor -          [Clearnet Link](https://github.com/gsantner/markor)
+
 Nekogram -        [Clearnet Link](https://github.com/Nekogram/Nekogram)
+
 NewPipe -         [Clearnet Link](https://github.com/TeamNewPipe/NewPipe)
+
 OpenKeychain -    [Clearnet Link](https://github.com/open-keychain/open-keychain)
+
 OrganicMaps -     [Clearnet Link](https://github.com/organicmaps/organicmaps)
+
 Protonmail        [Clearnet Link](https://github.com/ProtonMail/android-mail)
+
 Signal -          [Clearnet Link](https://signal.org)
+
 SimpleX -         [Clearnet Link](https://github.com/simplex-chat/simplex-chat)
+
 Spotube -         [Clearnet Link](https://github.com/KRTirtho/spotube)
-TorBrowser -      [Clearnet Link](https://www.torproject.org/download/#android/)
+
+TorBrowser -      [Clearnet Link](https://www.torproject.org/download/#android)
+
 Wireguard -       [Clearnet Link](https://download.wireguard.com/android-client)
 
-TODO: Verify apps not in AppVerifier database
-TODO: Quick add to Obtanium buttons, crowdsourced app list
+<br/>
 
 ### Aurora Store
 
@@ -148,21 +199,29 @@ Aurora Store
 Brave Browser
 Instagram
 Uber
-X 
+X
+
+<br/>
 
 ## Profiles
 
 TODO: Insular App, Work Profiles vs Main Profile
 
+<br/>
+
 ## Sandboxed Google Play
 
 Google Play Services (GPS) are not installed by default. You might notice that notifications don't work for some Apps in GrapheneOS or maybe some apps fail to run (such as banking apps). The reason for this is that some apps depend on Google Play Service, but GrapheneOS doesn't have those. Luckily the developers provide a way to install Google Play Service Sandboxed, so you can have all the functionality available on a device with stock Android OS. GrapheneOS.org has a great write up on the details of the implementation that I would suggest reading.
+
+<br/>
 
 ## Web Apps
 
 Don't want to use Aurora Store to download apps from Google Play Store? Don't want to enable Sandboxed Google Play Services? Try using Web Apps like https://uber.com instead of downloading an app.
 
 If this you are using this as a main device try to keep this in mind for reservations, travel, shopping, etc.
+
+<br/>
 
 ## Backups
 
@@ -179,8 +238,17 @@ Phones get lost/stolen everyday. Protect your data by taking a backup in case th
 Seedvault
 "...the project has been taken over by another group of people not sharing our goals or approach. For now, this is the best available option, so we're including it to give people encrypted backup support. We've made several security fixes to work around upstream issues with the project."
 
-## Videos
+<br/>
 
-Here's a review video of GrapheneOS - https://youtu.be/hbs7EPSaauI
-GrapheneOS on a road trip test - https://youtu.be/rp--qY9eSYI
-App stores - https://www.youtube.com/watch?v=IAoCfrqxIEg
+## Videos
+Graphene OS install - [Clearnet Link](https://www.youtube.com/watch?v=CD4Jl6ZYEbw)
+Here's a review video of GrapheneOS - [Clearnet Link](https://youtu.be/hbs7EPSaauI)
+GrapheneOS on a road trip test - [Clearnet Link](https://youtu.be/rp--qY9eSYI)
+App stores - [Clearnet Link](https://www.youtube.com/watch?v=IAoCfrqxIEg)
+
+## TODO
+
+TODO: Verify apps not in AppVerifier database
+TODO: Quick add to Obtanium buttons, crowdsourced app list
+TODO: Android 15 private spaces
+TODO: AnySoftKeyboard, FUTO, Heliboard
