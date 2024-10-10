@@ -56,7 +56,7 @@ Use this process if you already have ssh keys that you want to retain and/or if 
     # Type secure passphrase and record it in your password manager
     ```
 
-7. Copy the alphanumeric value that comes after `0x`. It will be used for the `user.signingkey` value in step 7 below.
+7. Copy the alphanumeric value that comes after `0x`. It will be used for the `user.signingkey` value in step 9 below.
     ```
     gpg --list-keys | grep "pub"
     ```
@@ -86,7 +86,7 @@ Use this process if you already have ssh keys that you want to retain and/or if 
 
 10. Copy your SSH and GPG public keys.
     ```
-    cat ~/.ssh/sovrepo_rsa.pub
+    cat ~/.ssh/sovrepo/sovrepo_rsa.pub
     gpg --export --armor githubemail@example.com
     ```
 
@@ -115,7 +115,7 @@ Use this process if you already have ssh keys that you want to retain and/or if 
     Host sovrepo
       HostName github.com
       IdentityFile ~/.ssh/sovrepo/sovrepo_rsa
-      ProxyCommand nc -X 5 -x localhost:9050 %h %
+      ProxyCommand nc -X 5 -x localhost:9050 %h %p
     ```  
 
 14. Make sure to always use the SSH alias (@sovrepo) variant for sovrepo GitHub repositories when you go to clone. Try cloning a repository and if everything looks good try a few other commands. 
