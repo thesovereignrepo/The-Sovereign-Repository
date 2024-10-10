@@ -1,8 +1,6 @@
+[Bitcoin White Paper](https://bitcoiner.guide/bitcoin.pdf) | [Annotations](http://fermatslibrary.com/s/bitcoin)
+
 [Bitcoiner.Guide](https://bitcoiner.guide/) 
-
-[Bitcoin White Paper](https://bitcoiner.guide/bitcoin.pdf)
-
-[Annotations](http://fermatslibrary.com/s/bitcoin)
 
 [Bitcoin Wikipedia](https://en.wikipedia.org/wiki/Bitcoin)
 
