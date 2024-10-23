@@ -1,4 +1,6 @@
-# How To Contribute
+# How To Contribute Pro
+
+Use this process if you already have ssh keys that you want to retain and/or if you work on other github projects. This process retains your current (default) environment while adding another one for The Sovereign Repository.
 
 ## Create Email & Github
 
@@ -15,8 +17,6 @@
 <br/>
 
 ## GitHub over Tor-tunneled SSH
-
-Use this process if you already have ssh keys that you want to retain and/or if you work on other github projects. This process retains your current (default) environment while adding another one for The Sovereign Repository (sovrepo).
 
 1. Make sure you have the necessary dependencies, for example if you are a Debian based Linux user run the following command.
     ```
