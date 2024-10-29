@@ -58,15 +58,21 @@ For example, Organic Maps was selected for the [Suggested Apps](#main-profile-su
 ### GrapheneOS Resources
 
 Features -  [Clearnet Link](https://grapheneos.org/features)
+
 Usage -     [Clearnet Link](https://grapheneos.org/usage)
+
 FAQ -       [Clearnet Link](https://grapheneos.org/faq)
+
 Vanadium -  [Clearnet Link](https://grapheneos.org/features#vanadium)
 
 ### Videos
 
 GrapheneOS Install -    [Clearnet Link](https://www.youtube.com/watch?v=CD4Jl6ZYEbw)
+
 Application Install -   [Clearnet Link](https://www.youtube.com/watch?v=IAoCfrqxIEg)
+
 Review of GrapheneOS -  [Clearnet Link](https://youtu.be/hbs7EPSaauI)
+
 GrapheneOS Road Trip -  [Clearnet Link](https://youtu.be/rp--qY9eSYI)
 
 </details>
@@ -147,18 +153,31 @@ Obtainium allows you to install and update apps directly from their source relea
 ### Main Profile Suggested Apps
 
 BreezyWeather -  [Clearnet Link](https://github.com/breezy-weather/breezy-weather)
+
 Calendar -       [Clearnet Link](https://github.com/FossifyOrg/Calendar)
+
 FUTOkeyboard -   [Clearnet Link](https://github.com/futo-org/android-keyboard)
+
 KeePassDX -      [Clearnet Link](https://github.com/Kunzisoft/KeePassDX)
+
 Markor -         [Clearnet Link](https://github.com/gsantner/markor)
+
 Nekogram -       [Clearnet Link](https://github.com/Nekogram/Nekogram)
+
 NewPipe -        [Clearnet Link](https://github.com/TeamNewPipe/NewPipe)
+
 OrganicMaps -    [Clearnet Link](https://github.com/organicmaps/organicmaps)
+
 Protonmail -     [Clearnet Link](https://github.com/ProtonMail/android-mail)
+
 Signal -         [Clearnet Link](https://github.com/signalapp/Signal-Android)
+
 SimpleX -        [Clearnet Link](https://github.com/simplex-chat/simplex-chat)
+
 Spotube -        [Clearnet Link](https://github.com/KRTirtho/spotube)
+
 TorBrowser -     [Clearnet Link](https://www.torproject.org/download/#android)
+
 Wireguard -      [Clearnet Link](https://download.wireguard.com/android-client)
 
 </details>
@@ -174,7 +193,7 @@ Let's explore how to manage these less desireable apps which we know harvest you
 
 ### Private Space
 
-The Private Space feature allows you to have a seperate area for the less desireable apps and it can be locked. If you want apps like Instagram or Facebook then continue with setting up a Private Space. The easiest and fastest method is reusing some of the steps from the [Suggested VPN]() section above, but feel free to modify with whatever VPN you prefer.
+The Private Space feature allows you to have a seperate area for the less desireable apps and it can be locked. If you want apps like Instagram or Facebook then continue with setting up a Private Space. The easiest and fastest method is reusing some of the steps from the [Suggested VPN](#vpn) section above, but feel free to modify with whatever VPN you prefer.
 
 1. Go to `Settings` > `Security & privacy` > `Private space` to create your Private Space.
 

@@ -40,6 +40,7 @@ Some ideas for purchase are Amazon, eBay, or just walk into a Best Buy with cash
 ### Videos
 
 GrapheneOS Install   -  [Clearnet Link](https://www.youtube.com/watch?v=CD4Jl6ZYEbw)
+
 Review of GrapheneOS -  [Clearnet Link](https://youtu.be/hbs7EPSaauI)
 
 </details>
@@ -106,18 +107,31 @@ Obtainium allows you to install and update apps directly from their source relea
 ### Main Profile Suggested Apps
 
 BreezyWeather -  [Clearnet Link](https://github.com/breezy-weather/breezy-weather)
+
 Calendar -       [Clearnet Link](https://github.com/FossifyOrg/Calendar)
+
 FUTOkeyboard -   [Clearnet Link](https://github.com/futo-org/android-keyboard)
+
 KeePassDX -      [Clearnet Link](https://github.com/Kunzisoft/KeePassDX)
+
 Markor -         [Clearnet Link](https://github.com/gsantner/markor)
+
 Nekogram -       [Clearnet Link](https://github.com/Nekogram/Nekogram)
+
 NewPipe -        [Clearnet Link](https://github.com/TeamNewPipe/NewPipe)
+
 OrganicMaps -    [Clearnet Link](https://github.com/organicmaps/organicmaps)
+
 Protonmail -     [Clearnet Link](https://github.com/ProtonMail/android-mail)
+
 Signal -         [Clearnet Link](https://github.com/signalapp/Signal-Android)
+
 SimpleX -        [Clearnet Link](https://github.com/simplex-chat/simplex-chat)
+
 Spotube -        [Clearnet Link](https://github.com/KRTirtho/spotube)
+
 TorBrowser -     [Clearnet Link](https://www.torproject.org/download/#android)
+
 Wireguard -      [Clearnet Link](https://download.wireguard.com/android-client)
 
 </details>
