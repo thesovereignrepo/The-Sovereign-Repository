@@ -67,6 +67,3 @@
 <a href="https://nakamotoinstitute.org/static/docs/hashcash.pdf" target="_blank">Hashcash - A Denial of Service Counter-Measure</a>
 <br>
 <a href="https://nakamotoinstitute.org/bit-gold/" target="_blank">Bit Gold</a>
-
-        
-        

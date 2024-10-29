@@ -18,8 +18,16 @@ How can I use the repo?
 
 - It can be used to create educational material.
 
+What level guides should I start with?
+
+- If you are new to these concepts please start with the Beginner level guides.
+
+- If you are familiar with these concepts then skip to the Advanced level guides.
+
+- Read through all Resources for additional information and useful links.
+
 Want to help?
 
-- See here for a [guide to contribute](https://github.com/thesovereignrepo/The-Sovereign-Repository/blob/master/How-To-Contribute-Pro.md) to this repo.
+- See here for a [guide to contribute](https://github.com/thesovereignrepo/The-Sovereign-Repository/blob/master/How-To-Contribute.md) to this repo.
 
 - Feedback is always welcome!
