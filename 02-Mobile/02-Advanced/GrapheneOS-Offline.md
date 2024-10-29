@@ -15,7 +15,7 @@
 
 - Think of this deployment as geared towards offline Bitcoin (cold storage), or perhaps storing some sensitive data offline.
 
-- Skip this guide if it's not a useful exercise, and continue to the [Advanced GrapheneOS Guide]().
+- Skip this guide if it's not a useful exercise, and continue to the [Advanced GrapheneOS Guide](https://github.com/thesovereignrepo/The-Sovereign-Repository/tree/master/02-Mobile/Advanced/GrapheneOS-Advanced.md).
 
 - A setup like this can replace a bitcoin hardware wallet. These concepts will really get your gears turning!
 
@@ -33,7 +33,7 @@ GrapheneOS is the only option we can recommend at this point for a phone Operati
 
 ### Videos
 
-GrapheneOS Install  -  [Clearnet Link](https://www.youtube.com/watch?v=CD4Jl6ZYEbw)
+GrapheneOS Install  -  [Youtube Link](https://www.youtube.com/watch?v=CD4Jl6ZYEbw)
 
 </details>
 <br/>
@@ -96,15 +96,15 @@ Now that you have verified the APK File you can finally Sideload the app on your
 
 4. Now you can launch the Ashigaru app.
 
-5. TODO: See the [Offline Bitcoin Section]() to learn how bitcoin can be spent and stored safely without using the internet.
+5. TODO: See the [Bitcoin Section](https://github.com/thesovereignrepo/The-Sovereign-Repository/tree/master/04-Bitcoin) to learn how bitcoin can be spent and stored safely without using the internet.
 
 <br/>
 
 ## Continue Your Training
 
-Ready to use GrapheneOS every day while on the go? Curious about how to safely manage apps from Google Play app store?
+Ready to up your game and use GrapheneOS as your every day phone? Curious about how to safely manage apps from Google Play app store?
 
-1. Continue to the [Advanced GrapheneOS Guide]() when you are ready to use GrapeheneOS in your daily life.
+1. Continue to the [Advanced GrapheneOS Guide](https://github.com/thesovereignrepo/The-Sovereign-Repository/tree/master/02-Mobile/Advanced/GrapheneOS-Advanced.md) when ready.
 
 2. Keep in mind, you can Factory Reset at any time for a fresh start, and continue to the next guide.
 

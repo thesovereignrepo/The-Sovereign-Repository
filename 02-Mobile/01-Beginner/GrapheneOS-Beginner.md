@@ -99,7 +99,7 @@ Obtainium allows you to install and update apps directly from their source relea
 
 1. To install Obtainium, download the file called `app-release.apk` from the releases page and open it. [Clearnet Link](https://github.com/ImranR98/Obtainium/releases)
 
-2. (Optional) For a quick app deployment, download the [obtainium-quick-deploy.json](https://github.com/thesovereignrepo/The-Sovereign-Repository/blob/master/Mobile) file and import it into the Obtainium app. This will add every app on the [Suggested Apps](#-main-profile-suggested-apps) list below.
+2. (Optional) For a quick app deployment, download the [obtainium-quick-deploy.json](https://github.com/thesovereignrepo/The-Sovereign-Repository/blob/master/02-Mobile) file and import it into the Obtainium app. This will add every app on the [Suggested Apps](#-main-profile-suggested-apps) list below.
 
 3. (Optional) Or manually copy/paste Github links into Obtainium to download any apps you want.
 
@@ -127,6 +127,6 @@ Wireguard -      [Clearnet Link](https://download.wireguard.com/android-client)
 
 Curious about how to safely manage apps from Google Play app store, want to maintain sensitive data, or ready to step up and turn GrapheneOS into your every day carry?
 
-1. Continue to the [Advanced GrapheneOS Guide]() or the [Offline GrapheneOS Guide]() when you are ready to continue your training.
+1. Continue to the [Advanced GrapheneOS Guide](https://github.com/thesovereignrepo/The-Sovereign-Repository/tree/master/02-Mobile/Advanced/GrapheneOS-Advanced.md) or the [Offline GrapheneOS Guide](https://github.com/thesovereignrepo/The-Sovereign-Repository/tree/master/02-Mobile/Advanced/GrapheneOS-Offline.md) when you are ready to continue your training.
 
 2. Keep in mind, you can Factory Reset at any time for a fresh start, and continue to the next guide.
