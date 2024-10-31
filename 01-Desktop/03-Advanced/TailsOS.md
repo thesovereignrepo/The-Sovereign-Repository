@@ -5,11 +5,11 @@
 * [2. Install](#install)
 
 ## Ratings
-Gaming: Bad
-Enterprise: Bad
-Security: Good
-Privacy: Good
-Open Source: Good
+Gaming: Low
+Enterprise: Low
+Security: High
+Privacy: High
+Open Source: Yes
 
 ## Intro 
 
