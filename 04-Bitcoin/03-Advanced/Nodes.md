@@ -1,7 +1,7 @@
 ## Running your own bitcoin node
 Running your own bitcoin node is a key part of becoming more fully self sovereign using bitcoin. First you'll need to start with self-custody. If bitcoin you've obtained is held on an exchange like CashApp, Coinbase or Kraken, you don't hold the keys. Holding the keys gives you access to your address sets and transaction keys, that in the modern era, are derived from HD wallets. See [bip-32](https://en.bitcoin.it/wiki/BIP_0032), [bip-39](https://en.bitcoin.it/wiki/BIP_0039), [bip-44](https://en.bitcoin.it/wiki/BIP_0044).
 
-Using self-custody hot wallet apps allow you to manage your bitcoin privately. The wallets can be thought of as *key rings* as they don't actually hold bitcoin. Bitcoin is represented as transactions on the blockchain. Some good hot wallets are covered [here](url). 
+Using self-custody hot wallet apps allow you to manage your bitcoin privately. The wallets can be thought of as *key rings* as they don't actually hold bitcoin. Bitcoin is represented as transactions on the blockchain. Some good hot wallets are covered [here](Bitcoin/Wallets). 
 
 You can use your self-custody wallet in conjunction with running your own node. Running your own node can take some technical fortitude to get things up and running safely and properly. 
 Two ways of achieving this combination are:
@@ -33,7 +33,7 @@ Self-custody wallets are attached/paired or *imported* to your node by taking st
 
 [Pairing Samourai Wallet](https://web.archive.org/web/20240214172859mp_/https://wiki.ronindojo.io/en/setup/samourai-wallet)
 
-[Connecting Sparraw Wallet](https://web.archive.org/web/20240502010028mp_/https://wiki.ronindojo.io/en/setup/sparrow-wallet)
+[Connecting Sparrow Wallet](https://web.archive.org/web/20240502010028mp_/https://wiki.ronindojo.io/en/setup/sparrow-wallet)
 
 
 ### [BTCPay Server](https://btcpayserver.org/)
@@ -63,10 +63,10 @@ This [article](https://sparrowwallet.com/docs/server-performance.html) provides 
 
 `TLDR; For this reason, Fulcrum emerges as a clear winner in this benchmark`
 
-While Fulcrum is best, it is not the default indexer on dojos. Additional configuration and a restart of your node is required to run Fulcrom. One downside of using the Fulcrum indexer is that it's sensitive to node power loss. If your node abruptly loses power, the Fulcrum index can be corrupted and require your to delete and rebuild the index database which can take several days to complete.
+While Fulcrum is best, it is not the default indexer on dojos. Additional configuration and a restart of your node is required to run Fulcrum. One downside of using the Fulcrum indexer is that it's sensitive to node power loss. If your node abruptly loses power, the Fulcrum index can be corrupted and require your to delete and rebuild the index database which can take several days to complete.
 
 ### Network and Power Backup
-Running your own node requires 365/24/7 uptime to remain efficient and reliabile. The bitcoin blockchain is constantly being updated as transactions occur and blocks are added. Your node is constantly communicating with other nodes in the bitcoin network verifying and storing the data on its internal hard drive or SSD. The address indexer runs on your node and continuously indexes new blocks to provide fast access to the transactions. These processes take time to re-sync to blockchain data if they're interrupted by power or network outages. Use an Uninterruptible Power Supply (UPS) to provide backup power to your node and networking equipment (router, switches, etc). Also, consider subscribing to a secondary backup Internet service to use in case your primary Internet service is temporarily unavailable.
+Running your own node requires 365/24/7 uptime to remain efficient and reliable. The bitcoin blockchain is constantly being updated as transactions occur and blocks are added. Your node is constantly communicating with other nodes in the bitcoin network verifying and storing the data on its internal hard drive or SSD. The address indexer runs on your node and continuously indexes new blocks to provide fast access to the transactions. These processes take time to re-sync to blockchain data if they're interrupted by power or network outages. Use an Uninterruptible Power Supply (UPS) to provide backup power to your node and networking equipment (router, switches, etc). Also, consider subscribing to a secondary backup Internet service to use in case your primary Internet service is temporarily unavailable.
 
 
 ### Summary
@@ -92,7 +92,7 @@ Use these links for informational purposes only. Some are dated and aren't neces
 
 ### [How to deploy Bitcoin Core Full-node](https://www.blockmeadow.com/bitcoin-how-to-deploy-full-node/)
 
-### [The Bitcoin Network - saylor.org](https://learn.saylor.org/mod/book/view.php?id=36307&chapterid=18899)
+### [The Bitcoin Network](https://learn.saylor.org/mod/book/view.php?id=36307&chapterid=18899)
 
 
 
