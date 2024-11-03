@@ -1,22 +1,41 @@
 # How To Contribute
 
-## Create Email & Github
+## Table of Contents
+* [1. Create Email](#create-email)
+* [2. Create Github](#create-github-account)
+* [3. Linux SSH Remote](#linux-github-over-tortunneled-ssh)
+* [4. Qubes SSH Remote](#qubes-whonix-github-over-tortunneled-ssh)
+
+
+## Create Email
 
 1. Use Privatemx (or preferred service) to create an email. [Tor Link](http://privao7wfgfbpf46lytcgla7fn7dcjpomp2djzm3lk3yy3i7zocvn5id.onion) | [Clearnet Link](https://privatemx.org)
 
-2. Sign up for Github, go to security settings, enable 2FA and enable private email. There is not a Tor .onion for Github at this time unfortunately.
+2. Make sure to use the Tor browser!
 
-3. Store all relevant credendtials in password manager.
+3. Store the email credentials in your password manager.
+
+## Create Github Account
+
+1. Using the Tor Browser, sign up for Github using the email you just created.
+
+2. Go to security settings, enable 2FA, and enable private email.
+
+3. Store all Github credendtials in your password manager.
 
 4. You should never need to use the email address again, but make sure all data is stored in case you need it!
 
 5. You can now interact via Github in your web browser, or continue to the next section to interact via SSH in command line.
 
+6. Need to report something? Use Github to open and Issue and make your voice heard! [Clearnet Link](https://github.com/thesovereignrepo/The-Sovereign-Repository/issues)
+
 <br/>
 
-## GitHub over Tor-tunneled SSH
+## Linux: GitHub over Tor-tunneled SSH
 
-Use this process if you already have SSH keys that you want to retain and/or if you work on other github projects. This process retains your current (default) environment while adding another one for The Sovereign Repository.
+For users of Debian based Linux (Tails, Ubuntu, PopOS), learn to interact with the repo via command line.
+
+NOTE: This process retains any current git configuration and will not interfere with it, while adding another one for The Sovereign Repository.
 
 1. Make sure you have the necessary dependencies, for example if you are a Debian based Linux user run the following command.
     ```
@@ -39,13 +58,13 @@ Use this process if you already have SSH keys that you want to retain and/or if 
     Enter file in which to save the key (/home/<username>/.ssh/id_ed25519): /home/<username>/.ssh/sovrepo/id_ed25519
     ```
 
-5. Rename files.          (TODO: Backups)
+5. Rename files.
     ```
 	mv ~/.ssh/sovrepo/id_ed25519 ~/.ssh/sovrepo/sovrepo_rsa
 	mv ~/.ssh/sovrepo/id_ed25519.pub ~/.ssh/sovrepo/sovrepo_rsa.pub
 	```
 
-6. Create PGP key.        (TODO: Backups)
+6. Create PGP key.
     ```
     gpg --full-generate-key
     # Key type is 1
@@ -131,18 +150,23 @@ Use this process if you already have SSH keys that you want to retain and/or if 
 
 <br/>
 
-# Qubes
+## Qubes Whonix: GitHub over Tor-tunneled SSH
+only use this VM for editing, cloning, etc
+codium
+For users of QubesOS Whonix Virtual Machines, learn to interact with the repo via command line.
 
-Qubes users see here. TODO
+NOTE: Do not use this VM for any other purpose besides interacting with this repo.
 
-<br/>
+1. Create a new Qube and choose the following attributes.
+    ```
+    Name:      tsr-editing
+    Color:     red
+    Type:      standaloneVM
+    Template:  whonix-workstation-17
+    Network:   sys-whonix
+    ```
 
-
-## GitHub over Tor-tunneled SSH
-
-TODO 
-
-1. Make sure you have the necessary dependencies, for example if you are a Debian based Linux user run the following command.
+2. Launch the `tsr-editing` Qube, open Terminal, and make sure you have the necessary dependencies. 
     ```
     sudo apt install gpg netcat-openbsd tor git ssh
     ```
@@ -154,13 +178,13 @@ TODO
 
 3. When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
 
-4. Rename files.          (TODO: Backups)
+4. Rename files.
     ```
     mv ~/.ssh/id_ed25519 ~/.ssh/sovrepo_rsa
     mv ~/.ssh/id_ed25519.pub ~/.ssh/sovrepo_rsa.pub
     ```
 
-5. Create PGP key.        (TODO: Backups)
+5. Create PGP key.
     ```
     gpg --full-generate-key
     # Key type is 1
@@ -218,8 +242,8 @@ TODO
 
 <br/>
 
-# Qubes
+## Backup Keys
 
-Qubes users see here. TODO
+TODO: GPG and SSH backup info
 
 <br/>
