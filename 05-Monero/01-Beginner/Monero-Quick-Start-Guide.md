@@ -52,7 +52,7 @@ Yes! While it isn't as critical for your privacy to run your own node as it is i
 
 If you use Feather Wallet or Monero GUI Wallet, these apps will download the Monero blockchain onto your computer. This is the simplest method if you don't need a mobile solution.
 
-Otherwise, you can self-host a node on an old laptop, mini-PC, or single-board computer by installing [PiNodeXMR](https://pinode.co.uk/). It takes care of much of the hard technical work to get up and running, and you can follow along their [wiki](https://github.com/monero-ecosystem/PiNode-XMR/wiki/Manual#installing) on GitHub.
+Otherwise, you can self-host a node on an old laptop, mini-PC, or single-board computer by installing [PiNodeXMR](https://pinode.co.uk/). It takes care of much of the hard technical work to get up and running, and you can follow along their [wiki](https://github.com/monero-ecosystem/PiNode-XMR/wiki/Manual#installing) on GitHub. *(After installing Ubuntu Server, follow [this](https://askubuntu.com/questions/1417938/ubuntu-does-not-use-full-disk-space-how-to-extend) post to allocate all of your available disk space to the operating system, or your disk will be full at 100 GB.)*
 
 If you don't want to wipe clean your existing computer, you can use [Monero Suite](https://monerosuite.org/) to create a Docker container instead.
 
