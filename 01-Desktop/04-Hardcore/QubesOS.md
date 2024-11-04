@@ -12,17 +12,28 @@
 * [9. Whonix](#whonix)
 * [10. VMs Resource Usage](#vm-resource-usage)
 
+## Ratings
+Gaming: Low
+Enterprise: High
+Security: High
+Privacy: High
+Cryptocurrency: High
+Open Source: Yes
+
 <br/>
 
 ## Intro
 
-- This is a basic overview guide for Qubes users to setup or recover from backup. I have tried to make this guide short and easy to skim through.
+- Qubes is the pinnacle security and privacy focused operating system and higly recommended for experienced Linux users, cryptocurrency users, sysadmins, devs, etc.
 
-- In this guide I assume the reader is somewhat familiar with the command line & PGP, knows basic things about Qubes OS such as the difference between a Template VM & Application VM, and understands the basics of some privacy tools like Tor & VPNs.
+- For a hardcore user, Qubes is all you will ever need for for your sensitive tasks on Desktop or Laptop.
+
+- This is a basic overview guide for Qubes users to setup or recover from backup.
+
+- In this guide it's assumed the reader is familiar with Terminal and PGP, has read basics about Qubes OS such as the difference between a Template VM & Application VM, and understands the basics of some privacy tools like Tor and VPNs.
 
 - Stay focused on a single task or section at a time, think about what is relevant to learn, and avoid wasting your time.
 
-- Please expand the additional resources below if this is your first time.
 
 <br/>
 
