@@ -6,7 +6,7 @@
 * [3. Initial Setup](#initial-setup)
 * [4. VPN](#vpn)
 * [5. Web Browser](#web-browser)
-* [6. Tor Browser](#tor-browser)
+* [6. Tor](#tor-daemon)
 * [7. Password Manager](#password-manager)
 * [8. Continue Your Training](#continue-your-training)
 
@@ -113,9 +113,11 @@ Open Terminal from the applications menu, and run the following commands to inst
     sudo apt update && sudo apt install brave-browser
     ```
 
+4. Open Brave Browser and get started browsing.
+
 <br/>
 
-## Tor
+## Tor Daemon
 
 Open Terminal from the applications menu, and run the following commands to install Tor Daemon using the Tor Project repository.
 
@@ -124,14 +126,14 @@ Open Terminal from the applications menu, and run the following commands to inst
     sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/deb.torproject.org-keyring.gpg] https://deb.torproject.org/torproject.org $(lsb_release -sc) main" >> /etc/apt/sources.list.d/tor-project.list'
     ```
 
-**NOTE:** For Linux Mint and other Ubuntu based systems, replace `$(lsb_release -sc)` in the command with the latest [Ubuntu code-name](https://wiki.ubuntu.com/Releases) (e.g, noble, jammy) that your system is based on. The keyring does have to be manually updated when rotated.
+**NOTE:** For Linux Mint and other Ubuntu based systems, replace `$(lsb_release -sc)` in the command with the latest [Ubuntu Code Name](https://wiki.ubuntu.com/Releases) (e.g, noble, jammy) that your system is based on. The keyring does have to be manually updated when rotated.
 
 2. Update repository info and install the Tor Daemon. 
     ```
     sudo apt update && sudo apt install tor
     ```
 
-3. Once installed check version and status.
+3. Once installed, check version and status. Press Q to quit to return to Terminal.
     ```
     tor --version && sudo systemctl status tor
     ```
@@ -139,9 +141,9 @@ Open Terminal from the applications menu, and run the following commands to inst
 
 ## Tor Browser
 
-Open Terminal from the applications menu, and run the following command to install Tor Browser using the Tor Project repository.
+Open Terminal from the applications menu, and run the following command to install Tor Browser.
 
-1. Open terminal and run command.
+1. Install the Tor Browser.
     ```
     sudo apt install torbrowser-launcher
     ```
@@ -154,17 +156,12 @@ Open Terminal from the applications menu, and run the following command to insta
 
 Open Terminal from the applications menu, and run the following command to install KeePassXC.
 
-1. update
-    ```
-    sudo apt update && sudo apt upgrade
-    ```
-
-2. install
+1. Install KeePassXC.
     ```
     sudo apt install keepassxc
     ```
 
-3. Now launch KeePassXC via the applications menus to get started with 2FA, username & password management, and so much more! Don't forget to backup your database file in a safe place and make multiple backups.
+2. Now launch KeePassXC via the applications menus to get started with 2FA, username & password management, and so much more! Don't forget to backup your database file in a safe place and make multiple backups.
 
 <br/>
 
