@@ -39,6 +39,8 @@ A lot of people already have Windows and just need a fresh start. In that case f
 
 2. Once you have backup pictures, documents, etc. then choose to `Reset This PC` and remove everything.
 
+<br/>
+
 ## Install
 
 1. If you need to install Windows, go to [Create Windows 11 Installation Media](https://www.microsoft.com/en-us/software-download/windows11) section on the Microsoft downloads page.
@@ -104,9 +106,7 @@ Use the Chris Titus's [Windows Utility](https://christitustech.github.io/winutil
 
 2. Choose to install Brave Browser or Thorium AVX2.
 
-3. U-block and Speedy extenstions are suggested.
-
-4. It is recommended to follow the [VPN Section](#vpn) and enable your VPN before you continue with a regular web browser. Remember, a VPN relies on trust in the VPN service provider, and should **never** be considered a replacement for the Tor Browser which has stronger privacy guarantees.
+3. It is recommended to follow the [VPN Section](#vpn) and enable your VPN before you continue with a regular web browser. Remember, a VPN relies on trust in the VPN service provider, and should **never** be considered a replacement for the Tor Browser which has stronger privacy guarantees.
 
 <br/>
 
