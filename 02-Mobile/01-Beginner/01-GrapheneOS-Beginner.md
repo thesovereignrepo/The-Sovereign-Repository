@@ -64,8 +64,6 @@ Grab your Google Pixel phone and let's get started with the de-Googling.
 
 ## VPN
 
-### Suggested VPN
-
 Currently the easiest and best VPN to setup after installing GrapheneOS is called IVPN. If you don't have an IVPN subscription this is a good method to acquire one.
 
 1. Open the app named App Store, and choose to install Accrescent.
@@ -76,13 +74,7 @@ Currently the easiest and best VPN to setup after installing GrapheneOS is calle
 
 4. Use the login code IVPN provides to activate the IVPN app, and make sure to store this code in your password manager.
 
-5. Go to your phone Settings > Network & Internet > VPN > Enable Always-on VPN > Enable Block connection without VPN
-
-### Alternative VPN
-
-1. Mullvad VPN -  [Tor Link](https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion) | [Clearnet Link](https://mullvad.net)
-
-2. Proton VPN  -  [Tor Link](https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/) | [Clearnet Link](https://protonvpn.com)
+5. Go to your phone `Settings` > `Network & Internet` > `VPN` > `Enable Always-on VPN` > `Enable Block connection without VPN`
 
 <br/>
 

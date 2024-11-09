@@ -250,14 +250,4 @@ Don't want to use Aurora Store to download apps from Google Play? Don't want to 
 
 If you have mastered this guide then congratulations is in order! You are now an advanced user of GrapheneOS and hopefully feel comfortable using this setup in your day-to-day life.
 
-## TODO
-<details><summary>**Contributors - Click to expand TODO ...**</summary>
-TODO: Backups, Bitcoin and Monero info, Hardcore/InviZiblePro ?
-TODO: Verify apps not in AppVerifier database, explain getting AppVerifier from Accrescent
-TODO: IVPN verify
-TODO: Android will not allow apps to be updated unless the new APK file uses the same unique developer Java KeyStore*.
-TODO: Verify build number or verifier os install app
-TODO: Quick add to Obtanium buttons, additional requests for crowdsourced app list
-TODO: Add link device support EOL
-TODO: Further refine quick deploy and offline guides, screeshots or vid
-</details>
+This marks the end of the completed section of this repository as of 9th November 2024. All guide after this remain under construction.
