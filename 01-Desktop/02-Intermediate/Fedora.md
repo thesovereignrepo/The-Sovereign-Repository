@@ -4,9 +4,9 @@
 * [1. Intro](#intro)
 * [2. Install](#install)
 * [3. Initial Setup](#initial-setup)
-* [4. VPN](#vpn)
-* [5. Web Browser](#web-browser)
-* [6. Tor](#tor-daemon)
+* [4. Tor](#tor-daemon)
+* [5. VPN](#vpn)
+* [6. Web Browser](#web-browser)
 * [7. Password Manager](#password-manager)
 * [8. Continue Your Training](#continue-your-training)
 
@@ -22,13 +22,13 @@ Open Source: Yes
 
 ## Intro
 
-- Fedora is a Linux Operating System.
+• Fedora is a Linux Operating System.
 
-- This OS is often considered a good place for newer Linux users to get started.
+• This OS is often considered a good place for newer Linux users to get started.
 
-- Fedora is a good choice for everyday browsing, media, work, and other regular tasks.
+• Fedora is a good choice for everyday browsing, media, work, and other regular tasks.
 
-- While Fedora is good for ease of use and a flashy interface, it is not recommended for more sensitive use cases.
+• While Fedora is good for ease of use and a flashy interface, it is not recommended for more sensitive use cases.
 
 <br/>
 
@@ -40,32 +40,68 @@ Fedora has a great step-by-step installation guide for you to follow. Please go 
 
 ## Initial Setup
 
-1. First, open the Terminal from the applications menu, then run the following command to make sure your system is up to date.
+Open Terminal from the applications menu, and run the following command to update your system.
+
+1. Run the update.
     ```
     sudo dnf update
     ```
 
 2. Once you have updated Fedora, it is a good time get familiar with initial configuration options. See this [Fedora Initial Setup Guide](https://itsfoss.com/things-to-do-after-installing-fedora) to get started learning what is possible.
 
-3. It is recommended to follow the [VPN Section](#vpn) below and enable your VPN before you continue with online activity. Remember, a VPN relies on trust in the VPN service provider, and should **never** be considered a replacement for the Tor Browser which has stronger privacy guarantees.
+<br/>
+
+## Tor Daemon
+
+Open Terminal from the applications menu, and run the following commands to install Tor Daemon.
+
+1. Install the Tor Daemon.
+    ```
+    sudo dnf install tor
+    ```
+
+2. Once installed, start the Tor Daemon.
+    ```
+    sudo systemctl start tor
+    ```
+
+3. Once installed, check version and status. Press Q to quit to return to Terminal.
+    ```
+    tor --version && sudo systemctl status tor
+    ```
+
+4. The Tor Daemon is especially useful for things like bitcoin wallets.
+
+## Tor Browser
+
+Open Terminal from the applications menu, and run the following command to install Tor Browser.
+
+1. Install the Tor Browser.
+    ```
+    sudo dnf install torbrowser-launcher
+    ```
+
+2. Now launch the Tor Browser via the applications menu and get started with private browsing. Always use Tor for sensitive tasks, and VPN can be used for regular browsing.
 
 <br/>
 
 ## VPN
 
-Open Terminal from the applications menu, then run the following commands to install the IVPN app by using IVPN's repository.
+Open Terminal and Tor Browser from the applications menu, then run the following commands to install the IVPN app by using IVPN's repository.
 
-1. Add the IVPN repository.
+1. Using the Tor Browser, purchase a subscripton from the [IVPN Website](https://www.ivpn.net/en) using Bitcoin or Monero.
+
+2. Now switch to your Terminal to run commands. This first command you run will add the IVPN repository.
     ```
     sudo dnf config-manager addrepo --from-repofile=https://repo.ivpn.net/stable/fedora/generic/ivpn.repo
     ```
 
-2. To install IVPN software.
+3. Now install the IVPN software.
     ```
     sudo dnf install ivpn-ui
     ```
 
-3. Open IVPN from the applications menu, log in, and enable the killswitch.
+4. Open the IVPN from the applications menu, enter your login code, and be sure to **enable the killswitch**. Be aware with the killswitch enabled your internet will not work if disconnected from the VPN.
 
 <br/>
 
@@ -94,37 +130,8 @@ Open Terminal from the applications menu, and run the following commands to inst
     ```
 
 5. Open Brave Browser and get started browsing.
-<br/>
 
-## Tor Daemon
-
-Open Terminal from the applications menu, and run the following commands to install Tor Daemon.
-
-1. Install the Tor Daemon.
-    ```
-    sudo dnf install tor
-    ```
-
-2. Once installed, start the Tor Daemon.
-    ```
-    sudo systemctl start tor
-    ```
-
-3. Once installed, check version and status. Press Q to quit to return to Terminal.
-    ```
-    tor --version && sudo systemctl status tor
-    ```
-
-## Tor Browser
-
-Open Terminal from the applications menu, and run the following command to install Tor Browser.
-
-1. Install the Tor Browser.
-    ```
-    sudo dnf install torbrowser-launcher
-    ```
-
-2. Now launch the Tor Browser via the applications menu and get started browsing.
+6. It is recommended to follow the [VPN Section](#vpn) and enable your VPN before you continue with a regular web browser. Remember, a VPN relies on trust in the VPN service provider, and should **never** be considered a replacement for the Tor Browser which has stronger privacy guarantees.
 
 <br/>
 
@@ -137,10 +144,12 @@ Open Terminal from the applications menu, and run the following command to insta
     sudo apt install keepassxc
     ```
 
-2. Now launch KeePassXC via the applications menus to get started with 2FA, username & password management, and so much more! Don't forget to backup your database file in a safe place and make multiple backups.
+2. Now launch KeePassXC via the applications menus to get started with 2FA, username & password management, and so much more! Make sure to **create regular backups** of your KeepassXC database .kdbx file! Avoid using Google or Apple cloud for data backups.
 
 <br/>
 
 ## Continue Your Training
 
 Continue to the [Advanced Section](https://github.com/thesovereignrepo/The-Sovereign-Repository/tree/master/01-Desktop/03-Advanced) to learn about a more security and privacy focused operating system.
+
+See something out of date, a broken link, or have a better idea? Please go [Open An Issue](https://github.com/thesovereignrepo/The-Sovereign-Repository/issues) on our Github and let us know!

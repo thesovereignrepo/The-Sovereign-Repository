@@ -4,9 +4,9 @@
 * [1. Intro](#intro)
 * [2. Install](#install)
 * [3. Initial Setup](#initial-setup)
-* [4. VPN](#vpn)
-* [5. Web Browser](#web-browser)
-* [6. Tor](#tor-daemon)
+* [4. Tor](#tor-daemon)
+* [5. VPN](#vpn)
+* [6. Web Browser](#web-browser)
 * [7. Password Manager](#password-manager)
 * [8. Continue Your Training](#continue-your-training)
 
@@ -22,13 +22,13 @@ Open Source: Yes
 
 ## Intro
 
-- Ubuntu is a Linux Operating System which is based on Debian.
+• Ubuntu is a Linux Operating System which is based on Debian.
 
-- This OS is often considered a good place for newer Linux users to get started.
+• This OS is often considered a good place for newer Linux users to get started.
 
-- Ubuntu is a good choice for everyday browsing, media, work, and other regular tasks.
+• Ubuntu is a good choice for everyday browsing, media, work, and other regular tasks.
 
-- While Ubuntu is good for ease of use and a flashy interface, it is not recommended for more sensitive use cases.
+• While Ubuntu is good for ease of use and a flashy interface, it is not recommended for more sensitive use cases.
 
 <br/>
 
@@ -39,6 +39,8 @@ Ubtuntu has a great step-by-step installation guide for you to follow. Please go
 <br/>
 
 ## Initial Setup
+
+Open Terminal from the applications menu, and run the following command to update your system.
 
 1. First, open the Terminal from the applications menu, then run the following command to make sure your system is up to date.
     ```
@@ -51,46 +53,86 @@ Ubtuntu has a great step-by-step installation guide for you to follow. Please go
 
 <br/>
 
+## Tor Daemon
+
+Open Terminal from the applications menu, and run the following commands to install Tor Daemon using the Tor Project repository.
+
+1. Add Tor repository and keyring info to sources list.
+    ```
+    sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/deb.torproject.org-keyring.gpg] https://deb.torproject.org/torproject.org $(lsb_release -sc) main" >> /etc/apt/sources.list.d/tor-project.list'
+    ```
+
+**NOTE:** For Linux Mint and other Ubuntu based systems, replace `$(lsb_release -sc)` in the command with the latest [Ubuntu Code Name](https://wiki.ubuntu.com/Releases) (e.g, noble, jammy) that your system is based on. The keyring does have to be manually updated when rotated.
+
+2. Update repository info and install the Tor Daemon.
+    ```
+    sudo apt update && sudo apt install tor
+    ```
+
+3. Once installed, check version and status. Press Q to quit to return to Terminal.
+    ```
+    tor --version && sudo systemctl status tor
+    ```
+
+4. The Tor Daemon is especially useful for things like bitcoin wallets.
+
+<br/>
+
+## Tor Browser
+
+Open Terminal from the applications menu, and run the following command to install Tor Browser.
+
+1. Install the Tor Browser.
+    ```
+    sudo apt install torbrowser-launcher
+    ```
+
+2. Now launch the Tor Browser via the applications menu and get started with private browsing. Always use Tor for sensitive tasks, and VPN can be used for regular browsing.
+
+<br/>
+
 ## VPN
 
-Open Terminal from the applications menu, then run the following commands to install the IVPN app by using IVPN's repository.
+Open Terminal and Tor Browser from the applications menu, then run the following commands to install the IVPN app by using IVPN's repository.
 
-1. Make sure your have curl and apt-transport-https installed.
+1. Using the Tor Browser, purchase a subscripton from the [IVPN Website](https://www.ivpn.net/en) using Bitcoin or Monero.
+
+2. Now switch to your Terminal to run commands. This first command you run will install curl and apt-transport-https.
     ```
     sudo apt install curl apt-transport-https
     ```
 
-2. Download IVPN's PGP key and save using `--dearmor` option.
+3. Next use this command to download IVPN's PGP key and save using `--dearmor` option.
     ```
     curl -fsSL https://repo.ivpn.net/stable/ubuntu/generic.gpg | gpg --dearmor > ~/ivpn-archive-keyring.gpg
     ```
 
-3. Move to appropriate directory.
+4. Move key appropriate directory.
     ```
     sudo mv ~/ivpn-archive-keyring.gpg /usr/share/keyrings/ivpn-archive-keyring.gpg
     ```
 
-4. Set appropriate permissions for PGP key.
+5. Set appropriate permissions for PGP key.
     ```
     sudo chown root:root /usr/share/keyrings/ivpn-archive-keyring.gpg && sudo chmod 644 /usr/share/keyrings/ivpn-archive-keyring.gpg
     ```
 
-5. Add the IVPN repository to sources list.
+6. Add the IVPN repository to sources list.
     ```
     curl -fsSL https://repo.ivpn.net/stable/ubuntu/generic.list | sudo tee /etc/apt/sources.list.d/ivpn.list
     ```
 
-6. Set appropriate permissions for repository.
+7. Set appropriate permissions for repository.
     ```
     sudo chown root:root /etc/apt/sources.list.d/ivpn.list && sudo chmod 644 /etc/apt/sources.list.d/ivpn.list
     ```
 
-7. Update repository info and install the IVPN software.
+8. Update repository info and install the IVPN software.
     ```
     sudo apt update && sudo apt install ivpn-ui
     ```
 
-8. Open IVPN from the applications menu, log in, and enable the killswitch.
+9. Open the IVPN from the applications menu, enter your login code, and be sure to **enable the killswitch**. Be aware with the killswitch enabled your internet will not work if disconnected from the VPN.
 
 <br/>
 
@@ -115,40 +157,7 @@ Open Terminal from the applications menu, and run the following commands to inst
 
 4. Open Brave Browser and get started browsing.
 
-<br/>
-
-## Tor Daemon
-
-Open Terminal from the applications menu, and run the following commands to install Tor Daemon using the Tor Project repository.
-
-1. Add Tor repository and keyring info to sources list.
-    ```
-    sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/deb.torproject.org-keyring.gpg] https://deb.torproject.org/torproject.org $(lsb_release -sc) main" >> /etc/apt/sources.list.d/tor-project.list'
-    ```
-
-**NOTE:** For Linux Mint and other Ubuntu based systems, replace `$(lsb_release -sc)` in the command with the latest [Ubuntu Code Name](https://wiki.ubuntu.com/Releases) (e.g, noble, jammy) that your system is based on. The keyring does have to be manually updated when rotated.
-
-2. Update repository info and install the Tor Daemon. 
-    ```
-    sudo apt update && sudo apt install tor
-    ```
-
-3. Once installed, check version and status. Press Q to quit to return to Terminal.
-    ```
-    tor --version && sudo systemctl status tor
-    ```
-<br/>
-
-## Tor Browser
-
-Open Terminal from the applications menu, and run the following command to install Tor Browser.
-
-1. Install the Tor Browser.
-    ```
-    sudo apt install torbrowser-launcher
-    ```
-
-2. Now launch the Tor Browser via the applications menu and get started browsing.
+5. It is recommended to follow the [VPN Section](#vpn) and enable your VPN before you continue with a regular web browser. Remember, a VPN relies on trust in the VPN service provider, and should **never** be considered a replacement for the Tor Browser which has stronger privacy guarantees.
 
 <br/>
 
@@ -168,3 +177,5 @@ Open Terminal from the applications menu, and run the following command to insta
 ## Continue Your Training
 
 Continue to the [Advanced Section](https://github.com/thesovereignrepo/The-Sovereign-Repository/tree/master/01-Desktop/03-Advanced) to learn about a more security and privacy focused operating system.
+
+See something out of date, a broken link, or have a better idea? Please go [Open An Issue](https://github.com/thesovereignrepo/The-Sovereign-Repository/issues) on our Github and let us know!

@@ -23,11 +23,11 @@ Open Source: No
 
 ## Intro
 
-- Tune your Windows setup to trim off the bloat, and improve privacy or security where possible.
+• Tune your Windows setup to trim off the bloat, and improve privacy or security where possible.
 
-- Windows isn't the best for privacy and security, but for gaming or enterprise it's widely used.
+• Windows isn't the best for privacy and security, but for gaming or enterprise it's widely used.
 
-- The goal is to eventually graduate from Windows to other Operating Systems for more sensetive tasks.
+• The goal is to eventually graduate from Windows to other Operating Systems for more sensetive tasks.
 
 <br/>
 
@@ -37,7 +37,7 @@ A lot of people already have Windows and just need a fresh start. In that case f
 
 1. Go to `Settings Menu` > `System` > `Reset This PC`
 
-2. Once you have backed pictures, documents, etc. then choose to remove everything.
+2. Once you have backup pictures, documents, etc. then choose to `Reset This PC` and remove everything.
 
 ## Install
 
@@ -46,6 +46,8 @@ A lot of people already have Windows and just need a fresh start. In that case f
 2. Plug in a USB stick, run the Media Creation Tool, and create a Windows Install USB stick.
 
 3. Plug USB stick into computer, boot into the BIOS, and choose to boot using the Windows Install USB stick.
+
+4. Choose to install the Windows Operating System.
 
 <br/>
 
@@ -59,29 +61,31 @@ A lot of people already have Windows and just need a fresh start. In that case f
 
 ## Tor Browser
 
+Open your Web Browser from the applications menu, and follow the instructions to install Tor Browser.
+
 1. Go to the [Tor Project Download](https://www.torproject.org/download) page and choose to download the browser for Windows.
 
-2. Open Tor Browser, and go to the [IVPN Website](https://www.ivpn.net/en).
+2. Now launch the Tor Browser via the applications menu and get started with private browsing. Always use Tor for sensitive tasks, and VPN can be used for regular browsing.
 
 <br/>
 
 ## VPN
 
-1. Purchase a subscripton from the [IVPN Website](https://www.ivpn.net/en) using Bitcoin or Monero.
+Open Tor Browser from the applications menu, and follow the instructions to install IVPN.
+
+1. Using the Tor Browser, purchase a subscripton from the [IVPN Website](https://www.ivpn.net/en) using Bitcoin or Monero.
 
 2. Download the [IVPN Windows App](https://www.ivpn.net/en/apps-windows) and install it.
 
-3. Open the IVPN App, enter your login code, and be sure to **enable the killswitch**.
+3. Open the IVPN from the applications menu, enter your login code, and be sure to **enable the killswitch**. Be aware with the killswitch enabled your internet will not work if disconnected from the VPN.
 
 <br/>
 
 ## WinUtil
 
-Let's use Chris Titus's [Windows Utility](https://christitustech.github.io/winutil) on Github to finish setting up quickly.
+Use the Chris Titus's [Windows Utility](https://christitustech.github.io/winutil) on Github to finish setting up quickly. This all-in-one Open Source tool is an easy way to streamline the best possible Windows setup.
 
-This all-in-one Open Source tool is an easy way to streamline the best possible Windows setup. It can be used to streamline installs, debloat with tweaks, troubleshoot with config, and fix Windows updates.
-
-1. To use the tool, the Start Menu and type `Powershell`, then right click the `Powershell` option and select to run as Administrator.
+1. To use the tool, the Start Menu and type Powershell, then right click the Powershell option, and select to run as Administrator.
 
 2. Enter the following command:
     ```
@@ -94,26 +98,32 @@ This all-in-one Open Source tool is an easy way to streamline the best possible 
 
 ## Web Browser
 
+Use the Chris Titus's [Windows Utility](https://christitustech.github.io/winutil) to download a Web Browser.
+
 1. Go to the WinUtil App "Install" tab, and look at the "Browsers" section.
 
 2. Choose to install Brave Browser or Thorium AVX2.
 
 3. U-block and Speedy extenstions are suggested.
 
+4. It is recommended to follow the [VPN Section](#vpn) and enable your VPN before you continue with a regular web browser. Remember, a VPN relies on trust in the VPN service provider, and should **never** be considered a replacement for the Tor Browser which has stronger privacy guarantees.
+
 <br/>
 
 ## Password Manager
 
+Use the Chris Titus's [Windows Utility](https://christitustech.github.io/winutil) to download a Password Manager.
+
 1. Go to the WinUtil App "Install" tab, and look at the "Utilities" section.
 
-2. Choose to install KeepassXC and use it to record usernames, passwords, and website info.
+2. Choose to install KeePassXC.
 
-3. Make sure to **create regular backups** of your KeepassXC database .kdbx file! Avoid using Google or Apple cloud for data backups.
+3. Now launch KeePassXC via the applications menus to get started with 2FA, username & password management, and so much more! Make sure to **create regular backups** of your KeepassXC database .kdbx file! Avoid using Google or Apple cloud for data backups.
 
 <br/>
 
 ## Continue Your Training
 
-1. TODO: Why migrate
-2. TODO: Open Source v Closed
-3. TODO: Avoid using hwalls on win
+Continue to the [Intermediate Section](https://github.com/thesovereignrepo/The-Sovereign-Repository/tree/master/01-Desktop/02-Intermediate) to get started with Linux.
+
+See something out of date, a broken link, or have a better idea? Please go [Open An Issue](https://github.com/thesovereignrepo/The-Sovereign-Repository/issues) on our Github and let us know!
