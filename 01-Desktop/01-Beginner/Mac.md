@@ -26,7 +26,7 @@ Open Source: No
 
 • Mac isn't the best for privacy and security, but for enterprise and media it's widely used.
 
-• The goal is to eventually graduate from Windows to other Operating Systems for more sensetive tasks.
+• The goal is to eventually graduate from Windows to other Operating Systems for more sensitive tasks.
 
 <br/>
 
@@ -57,6 +57,12 @@ Apple’s security and privacy settings offer several ways you can enhance prote
 6. Go to `System Preferences` > `System Preferences` > `Network` > `Bluetooth`
 
 7. If you aren’t using Bluetooth, or if you’re near an area you don’t trust, then turn it off. This decreases your computer’s discoverability and adds an extra layer of privacy.
+
+8. If you don't need to use an Apple account, then Apple won't have everything you do tied to it. Instead of the App Store, use the internet and/or [Homebrew](https://brew.sh/) to find, download, and update apps. You can use [Little Snitch](https://www.obdev.at/products/littlesnitch/index.html) to block Apple phoning home which apps you open, among other data.
+
+*Note: sometimes Apple prevents you from opening apps that aren't from the App Store, saying the app is damaged. To bypass this, follow [this guide](https://howtogeek.com/803598/app-is-damaged-and-cant-be-opened/) to remove the quarantine flag. You may have to do this after each major Mac update.*
+
+9. Consider enabling [Lockdown Mode](https://support.apple.com/en-us/105120). It increases the security and privacy of your Mac by disabling certain features, most of which you don't need if you aren't using an Apple account anyways.
 
 <br/>
 
