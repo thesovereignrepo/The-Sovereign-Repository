@@ -3,8 +3,8 @@
 ## Table of Contents
 * [1. Create Email](#create-email)
 * [2. Create Github](#create-github-account)
-* [3. Linux SSH Remote](#linux-github-over-tortunneled-ssh)
-* [4. Qubes SSH Remote](#qubes-whonix-github-over-tortunneled-ssh)
+* [3. Github SSH](#github-over-tortunneled-ssh)
+* [4. Github Qubes](#qubes-github-ssh)
 
 
 ## Create Email
@@ -150,7 +150,7 @@ NOTE: This process retains any current git configuration and will not interfere 
 
 <br/>
 
-## Qubes Whonix: GitHub over Tor-tunneled SSH
+## Qubes Github SSH
 
 Qubes users see this [Qubes Dev Environment](https://github.com/thesovereignrepo/The-Sovereign-Repository/blob/master/01-Desktop/04-Hardcore/04-Qubes-Dev-Environment.md#github-over-tor-tunneled-ssh) guide.
 
