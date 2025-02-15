@@ -24,7 +24,7 @@ Best practice is to buy a chunk of Monero that you spend over time. For instance
 #### DEXs (Crypto/Fiat)
 
 - Bisq (requires BTC) [Download Here (Clearnet)](https://bisq.network/)
-- Haveno (requires XMR) [Download Here (Clearnet)](https://haveno-reto.com/)
+- RetoSwap (requires XMR) [Download Here (Clearnet)](https://retoswap.com/)
 - Robosats (requires Lightning BTC) [Learn Here (Clearnet)](https://learn.robosats.com/) [Trade Here (Tor)](http://robodexarjwtfryec556cjdz3dfa7u47saek6lkftnkgshvgg2kcumqd.onion/)
 - *Serai (uses atomic swaps, coming soon)*
 
@@ -38,7 +38,7 @@ Best practice is to buy a chunk of Monero that you spend over time. For instance
 Here are some suggestions:
 
 - ﻿**XMR Bazaar** (like eBay but p2p) [Clearnet](https://xmrbazaar.com/)
-- ﻿**IVPN﻿** (an excellent privacy-focused VPN) [Clearnet](https://www.ivpn.net/)
+- ﻿**IVPN﻿** and **Mullvad** (excellent privacy-focused VPNs) [Clearnet IVPN](https://www.ivpn.net/) [Clearnet Mullvad](https://mullvad.net/)
 - ﻿**MyNymBox﻿** (anonymous hosting services) [Clearnet](https://mynymbox.io/) [Tor](http://mynymecyaiv7t55qiggp76rzqz35si5g7nzdh3yci4wiqbmlwqg7xeyd.onion/) [I2P](gmptwbv7xfhtie4znmvtwuotffctu7betme3lrxmha3xftbhvqvq.b32.i2p/)
 - ﻿**Silent Link﻿** (anonymous eSIM) [Clearnet](https://silent.link/) [Tor](http://silentlnit5ryavvfz5vw7s4qg62jujd666lnc4tg2chj64zuwuqtvqd.onion/)
 - ﻿**CoinCards﻿** (gift cards) [Clearnet](https://coincards.com/)
@@ -54,7 +54,9 @@ Yes! While it isn't as critical for your privacy to run your own node as it is i
 
 If you use Feather Wallet or Monero GUI Wallet, these apps will download the Monero blockchain onto your computer. This is the simplest method if you don't need a mobile solution.
 
-Otherwise, you can self-host a node on an old laptop, mini-PC, or single-board computer by installing [PiNodeXMR](https://pinode.co.uk/). It takes care of much of the hard technical work to get up and running, and you can follow along their [wiki](https://github.com/monero-ecosystem/PiNode-XMR/wiki/Manual#installing) on GitHub. *(After installing Ubuntu Server, follow [this](https://askubuntu.com/questions/1417938/ubuntu-does-not-use-full-disk-space-how-to-extend) post to allocate all of your available disk space to the operating system, or your disk will be full at 100 GB.)*
+Otherwise, a good plug-n-play node is the [Monero Nodo](https://moneronodo.com/). It should perform well for a decade, and it even has a built-in touch screen.
+
+If you want a DIY solution, you can self-host a node on an old laptop, mini-PC, or single-board computer by installing [PiNodeXMR](https://pinode.co.uk/). It takes care of much of the hard technical work to get up and running, and you can follow along their [wiki](https://github.com/monero-ecosystem/PiNode-XMR/wiki/Manual#installing) on GitHub. *(After installing Ubuntu Server, follow [this](https://askubuntu.com/questions/1417938/ubuntu-does-not-use-full-disk-space-how-to-extend) post to allocate all of your available disk space to the operating system, or your disk will be full at 100 GB.)*
 
 If you don't want to wipe clean your existing computer, you can use [Monero Suite](https://monerosuite.org/) to create a Docker container instead.
 
