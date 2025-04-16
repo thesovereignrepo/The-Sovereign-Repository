@@ -1,18 +1,52 @@
-# Some Dev Enviro Stuff
+# Qubes Development Environment
 
-Most importantly, don’t do anything other than code editor and git in a development VM. Browsing has probably the highest risk. Therefore best if avoided in a development VM. Some code is safe to test in a development VM if you verofy it only runs locally.
+Rule number 1, don’t do anything other than code editor and git in a development VM. Web browsing has probably the highest risk so use Disposable VMs for that. Some code is safe to test in a development VM if you verify it only runs locally.
+
+Another example use case for development VM is using it only to make SSH connections.
+
+Follow this section to setup your secure development enviroment quickly.
 
 <br/>
 
-# Install VSCode
+## Table of Contents
+* [1. Install VSCodium](#install-vscodium)
+* [2. GitHub Over Tor](#github-over-tor-tunneled-ssh)
+* [3. Bash Git Prompt](#bash-git-prompt)
+* [4. SSH Shortcuts](#ssh-shortcuts)
 
-The following assumes you have a debian template.
 
-You can either download the .deb in a disposable VM and then transfer it to the template, or you can install the snap backend in the template and then download the snap package in the application VM.
+## Install VSCodium
 
-Once installed go to the application VM settings, click the Applications tab, and add VSCode to your menu.
+This will be a Template that you can customize if you prefer multiple seperated development environments with VSCodium editor. This can be useful for a variety of security, privacy, and testing scenarios.
 
-Install VSCode - [Clearnet Link](https://forum.qubes-os.org/t/installing-visual-studio-code-unity-securely/11219)
+1. Create Template VM named `whonix-17-dev`.
+
+2. Open terminal for `whonix-17-dev` and use curl to obtain PGP key belonging to Paulcarroty.
+
+```
+sudo curl -o /usr/share/keyrings/vscodium-archive-keyring.asc https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+```
+
+3. Add entry to sources list.
+
+```
+echo 'deb [ arch=amd64 signed-by=/usr/share/keyrings/vscodium-archive-keyring.asc ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
+```
+
+4. Run update and install VS Codium and other dependencies.
+
+```
+sudo apt update && sudo apt install codium gpg netcat-openbsd git ssh
+```
+
+5. Shut down `whonix-17-dev` Template VM.
+
+6. Create new App VM called `whonix-dev1` based on `whonix-17-dev` Template VM, go to `Settings` > `Applications` and add VS Codium.
+
+7. Install any other applications or packages in the `whonix-17-dev` Template VM and **not** in the `whonix-dev1` App VM. Anything installed in an App VM will be lost if it is not installed in the Template VM.
+
+7. Your new development environment is now ready to be customized and put to use. Repeat step 6 and create as many new App VMs as you like.
 
 <details>
 
@@ -32,59 +66,30 @@ This repo exists so that you don't have to download+build from source. The build
 
 If you want to build from source yourself, head over to Microsoft's vscode repo and follow their instructions. This repo exists to make it easier to get the latest version of MIT-licensed VS Code.
 
+Gitlab Repo - [Clearnet Link](https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo)
+
+Github Repo - [Clearnet Link](https://github.com/VSCodium/vscodium/blob/master/docs/index.md)
+
+Discussion - [Clearnet Link](https://forum.qubes-os.org/t/installing-visual-studio-code-unity-securely/11219)
+
 </details>
 
 <br/>
 
-# Quick Local SSH Shortcuts
+## GitHub over Tor-tunneled SSH
 
-For example the IP could be 192.168.0.3 and instead of memorizing that IP, you want to just use `rpi4`.
+Now that you have the ability to create multiple development environments using the Codium guide above, try interacting with a repo via command line, in this example we will interact with The Sovereign Repo. This can be adapted for Gitlab or Gitea users as well.
 
-1. Run command
-    ```
-    sudo nano ~/.ssh/config
-    ```
+**NOTE:** For security, do not use this VM for any other purpose besides interacting with a repo.
 
-2. Example config file
-    ```
-    Host rpi4
-    Hostname = 192.168.0.3
-    User = username
-    ```
-
-3. Example SSH command entered into the terminal
-    ```
-    ssh rpi4
-    ```
-
-<br/>
-
-# GitHub over Tor-tunneled SSH
-
-For users of QubesOS Whonix Virtual Machines, learn to interact with the repo via command line.
-
-**NOTE:** Do not use this VM for any other purpose besides interacting with this repo.
-
-1. Create a new Qube and choose the following attributes.
-    ```
-    Name:      tsr-editing
-    Color:     red
-    Type:      standaloneVM
-    Template:  whonix-workstation-17
-    Network:   sys-whonix
-    ```
-
-2. Launch the `tsr-editing` Qube, open Terminal, and make sure you have the necessary dependencies. 
-    ```
-    sudo apt install gpg netcat-openbsd tor git ssh
-    ```
+1. Open the Terminal in your new `whonix-dev1` App VM.
 
 2. Create an ssh key, and see more info about generating new keys here. [Tor Link](http://w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion/wiki/SSH#Key_Generation) | [Clearnet Link](https://www.kicksecure.com/wiki/SSH#Key_Generation)
     ```
     ssh-keygen -o -a 75 -t ed25519
     ```
 
-3. When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+3. When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location of `~/.ssh`.
 
 4. Rename files.
     ```
@@ -108,13 +113,13 @@ For users of QubesOS Whonix Virtual Machines, learn to interact with the repo vi
     gpg --list-keys | grep "pub"
     ```
 
-7.  Edit these commands as needed, then run them to configure Git. Check ~/.gitconfig file at any time to see the git configuration settings.
+7.  Edit these commands as needed, then run them to configure Git. Check `~/.gitconfig` file at any time to see the git configuration settings. The `--global` flag is used in this case as we want to ensure each development VM is seperate. If you want to see an example without that flag see [this guide](https://github.com/thesovereignrepo/The-Sovereign-Repository/blob/master/How-To-Contribute.md#github-over-tor-tunneled-ssh).
     ```
     git config --global user.name "Github Username"
     git config --global user.email githubemail@example.com
     git config --global commit.gpgsign true
     git config --global pull.rebase true
-    git config --global user.signingkey XXXPGPKEYHEREXXX
+    git config --global user.signingkey PASTE-KEY-FROM-STEP-6
     ```
 
 8. Copy your SSH and GPG public keys.
@@ -148,34 +153,18 @@ For users of QubesOS Whonix Virtual Machines, learn to interact with the repo vi
 
 12. Want to learn more about using Git in command line? Here is a great book. [Clearnet Link](https://git-scm.com/book/en/v2)
 
-TODO: only use this VM for editing, cloning, etc
-
-TODO: mention codium
-
 <br/>
 
-# Git Configuration
-
-COMING SOON ADD GPG KEY to config file
-
-git config --global user.signingkey XXXXXXXXXXX
-
-To sign all commits by default in any local repository on your computer, run:
-git config --global commit.gpgsign true
-
-<br/>
-
-Make sure:
+13. (Optional) Many prefer this configutaion option.
 
     ```
     git config pull.rebase true
     ```
 
-<br/>
 
-# Bash Git Prompt
+## Bash Git Prompt
 
-See: https://github.com/magicmonty/bash-git-prompt
+Could be used in any development VM such as `whonix-dev1` mentioned above. Bash Git Prompt could make your command line experience a little more enjoyable.
 
 1. Follow instructions to git clone and edit ~/.bashrc
 
@@ -238,3 +227,34 @@ Add the following to ~/.bashrc:
 [commit]
 	gpgsign = true
 ```
+
+Github Repo - [Clearnet Link](https://github.com/magicmonty/bash-git-prompt)
+
+<br/>
+
+## SSH Shortcuts
+
+For example the IP could be 192.168.0.3 and instead of memorizing that IP, you want to just use `rpi4`.
+
+1. Run command
+    ```
+    sudo nano ~/.ssh/config
+    ```
+
+2. Example config file
+    ```
+    Host rpi4
+    Hostname = 192.168.0.3
+    User = username
+    ```
+
+3. Example SSH command entered into the terminal
+    ```
+    ssh rpi4
+    ```
+
+<br/>
+
+## Continue Your Training
+
+Continue to the [Mobile Section](https://github.com/thesovereignrepo/The-Sovereign-Repository/tree/master/02-Mobile) of guides to advance your training further. A new journey with mobile devices is waiting.

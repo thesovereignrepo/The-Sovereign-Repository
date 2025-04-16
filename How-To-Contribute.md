@@ -35,17 +35,17 @@
 
 For users of Debian based Linux (Tails, Ubuntu, PopOS), learn to interact with the repo via command line.
 
-NOTE: This process retains any current git configuration and will not interfere with it, while adding another one for The Sovereign Repository.
+**NOTE:** This example process retains any current git configuration and will not interfere with it, while adding another one for The Sovereign Repository.
 
 1. Make sure you have the necessary dependencies, for example if you are a Debian based Linux user run the following command.
     ```
     sudo apt install gpg netcat-openbsd tor git ssh
     ```
 
-2. Create a ssh sovrepo directory for keys:
+2. Create a SSH sovrepo directory for keys:
     ```	
-   mkdir /home/$USER/.ssh/sovrepo
-   chmod 700 /home/$USER/.ssh/sovrepo/
+   mkdir ~/.ssh/sovrepo
+   chmod 700 ~/.ssh/sovrepo
    ```
 
 3. Create an ssh key, and see more info about generating new keys here. [Tor Link](http://w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion/wiki/SSH#Key_Generation) | [Clearnet Link](https://www.kicksecure.com/wiki/SSH#Key_Generation)
@@ -53,15 +53,12 @@ NOTE: This process retains any current git configuration and will not interfere 
 	ssh-keygen -o -a 75 -t ed25519
 	```
 
-4. When you're prompted to "Enter a file in which to save the key," enter the sovrepo directory substituting your username.
-    ```
-    Enter file in which to save the key (/home/<username>/.ssh/id_ed25519): /home/<username>/.ssh/sovrepo/id_ed25519
-    ```
+4. When you're prompted to "Enter a file in which to save the key," press `Enter`. This accepts the default file location of `~/.ssh`.
 
-5. Rename files.
+5. Move files and rename them.
     ```
-	mv ~/.ssh/sovrepo/id_ed25519 ~/.ssh/sovrepo/sovrepo_rsa
-	mv ~/.ssh/sovrepo/id_ed25519.pub ~/.ssh/sovrepo/sovrepo_rsa.pub
+	mv ~/.ssh/id_ed25519 ~/.ssh/sovrepo/sovrepo_rsa
+	mv ~/.ssh/id_ed25519.pub ~/.ssh/sovrepo/sovrepo_rsa.pub
 	```
 
 6. Create PGP key.
@@ -96,7 +93,7 @@ NOTE: This process retains any current git configuration and will not interfere 
     [user]
             name = "Github Username"
             email = githubemail@example.com
-            signingkey = XXXPGPKEYHEREXXX  
+            signingkey = PASTE-KEY-FROM-STEP-7  
     [commit]                                                                                                                                                                                           
             gpgsign = true 
     [pull]                                                                                                                                                                                             
